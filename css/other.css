@@ -103,12 +103,13 @@
 	display: block;
 	height: 35px;
 	width: 100%;
-	background: #EEEEEE;
 	line-height: 35px;
 	font-size: 18px;
-	color: #333333;
+	color: #FFFFFF;
 	margin-bottom: 10px;
 	float: left;
+	background: url(../img/other/cta.jpg) no-repeat center;
+	text-indent: 5px;
 }
 
 .jcc-body-content p{

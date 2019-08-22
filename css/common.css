@@ -7,6 +7,10 @@
 	position: fixed;
 	left: 0px;
 	top: 0px;
+	box-shadow: 0px 1px 10px #187CB6;
+	-webkit-box-shadow: 0px 1px 10px #187CB6; 
+	-moz-box-shadow: 0px 1px 10px #187CB6;
+	border-collapse:separate !important;
 }
 
 .jcc-header-nav{
@@ -27,6 +31,8 @@
 	font-size: 18px;
 	color: #FFFFFF;
 }
+
+
 
 .jcc-header-nav-item{
 	display: block;
@@ -64,7 +70,7 @@
 
 .jcc-body{
 	width: 100%;
-	min-height: 480px;
+	min-height: 540px;
 	background: url(../img/ico/grid.png);
 	float: left;
 	padding-bottom: 80px;
@@ -72,20 +78,30 @@
 
 .jcc-body-banner{
 	display: block;
-	width: 1120px;
-	height: 480px;
-	margin: 0 auto;
-	margin-top: 75px;
-	background: #EEEEEE;
+	width: 100%;
+	height: 540px;
+	float: left;
+	margin-top: 55px;
+	background: rgba(0,0,0,0.8);
+	overflow: hidden;
 }
 
 .jcc-body-logo{
 	display: block;
-	width: 1000px;
-	height: 360px;
-	padding: 60px;
+	width: 1120px;
+	height: 540px;
+	padding: 0px;
+	margin: 0 auto;
+	background: url(../img/other/slider-1.jpg) no-repeat center;
+}
+
+.jcc-body-rgba{
+	display: block;
+	width: 1120px;
+	height: 540px;
+	padding: 0px;
 	float: left;
-	background: url(../img/ico/bg.png) no-repeat center;
+	background: rgba(0,0,0,0.3);
 }
 
 #jcc-body-banner-title{
@@ -96,18 +112,24 @@
 	text-align: center;
 	font-size: 60px;
 	font-weight: bold;
-	color: #333333;
+	color: #FFFFFF;
+	margin-top: 100px;
+	float: left;
+	text-transform: uppercase;
 }
 
 #jcc-body-banner-describe{
 	display: block;
 	width: 100%;
-	height: 50px;
-	line-height: 50px;
+	min-height: 35px;
+	line-height: 35px;
 	text-align: center;
 	font-size: 30px;
-	font-weight: bold;
-	color: #666666;
+	float: left;
+	color: #FFFFFF;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
 }
 
 #jcc-body-banner-time{
@@ -118,8 +140,10 @@
 	text-align: center;
 	font-size: 18px;
 	font-weight: normal;
-	color: #666666;
-	margin-top: 30px;
+	color: #FFFFFF;
+	margin-top: 10px;
+	float: left;
+	text-transform: uppercase;
 }
 
 #jcc-body-info{
@@ -128,49 +152,59 @@
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
-	font-size: 21px;
+	font-size: 18px;
 	font-weight: normal;
-	color: #666666;
-	margin-bottom: 30px;
+	color: #FFFFFF;
+	float: left;
+	text-transform: uppercase;
 }
 
 #jcc-body-info a{
-	font-size: 21px;
+	font-size: 18px;
 	font-weight: normal;
-	color: #666666;
-	color: #299ADB;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+#jcc-body-info a:hover{
+	color: #CCCCCC;
 }
 
 
 #jcc-body-banner-button{
 	display: block;
 	width: 100%;
-	height: 55px;
+	height: 62px;
+	margin-top: 30px;
+	float: left;
 }
 
 
 #jcc-body-banner-button span{
 	display: block;
-	min-width: 0px;
-	float: left;
-	
-	
+	width: 504px;
+	margin: 0 auto;
 }
 
 .jcc-body-banner-button-left{
 	display: block;
-	width: 175px;
-	height: 55px;
-	line-height: 55px;
+	width: 225px;
+	height: 60px;
+	line-height: 60px;
 	font-size: 16px;
 	color: #FFFFFF;
 	background: #299ADB;
-	border-radius: 8px;
+	border-radius: 3px;
 	float: left;
-	text-indent: 5px;
-	margin-right: 100px;
-	margin-left: 255px;
+	text-align: center;
 	border: 1px solid #187CB6;
+	margin-right: 50px;
+	text-transform: uppercase;
+}
+
+.jcc-body-banner-button-left:hover{
+	background: #187CB6;
 }
 
 .jcc-body-banner-button-left img{
@@ -184,16 +218,24 @@
 
 .jcc-body-banner-button-right{
 	display: block;
-	width: 215px;
-	height: 55px;
-	line-height: 55px;
+	width: 225px;
+	height: 60px;
+	line-height: 60px;
 	font-size: 16px;
-	color: #666666;
+	color: #333333;
+	text-align: center;
 	background: #FFFFFF;
-	border-radius: 8px;
+	border-radius: 3px;
 	float: left;
 	border: 1px solid #DDDDDD;
+	text-transform: uppercase;
 }
+
+.jcc-body-banner-button-right:hover{
+	background: #DDDDDD;
+	border: 1px solid #DDDDDD;
+}
+
 
 .jcc-body-banner-button-right img{
 	display: block;
@@ -203,6 +245,8 @@
 	margin-top: 13px;
 	margin-left: 22px;
 }
+
+
 
 #jcc-body-banner-link{
 	display: block;

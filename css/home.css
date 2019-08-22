@@ -1,16 +1,17 @@
 .jcc-body-item{
 	display: block;
-	width: 1120px;
+	width: 100%;
 	min-height: 240px;
-	margin: 0 auto;
-	margin-top: 50px;
+	margin-bottom: 20px;
+	float: left;
+	
 }
 
 .jcc-body-item-list{
 	display: block;
 	width: 1120px;
 	min-height: 240px;
-	float: left;
+	margin: 0 auto;
 }
 
 .jcc-body-item-list li{
@@ -22,10 +23,10 @@
 
 .jcc-body-item-list-logo{
 	display: block;
-	float: left;
 	height: 85px;
-	max-width: 100%;
+	width: 160px;
 	background: #FFFFFF;
+	margin: 0 auto;
 }
 
 .jcc-body-item-list-logo img{
@@ -42,12 +43,14 @@
 	line-height: 30px;
 	font-size: 28px;
 	font-weight: bold;
-	color: #333333;
+	color: #000000;
 	padding-top: 20px;
 	padding-bottom: 10px;
 	width: 100%;
 	float: left;
+	text-align: center;
 }
+
 
 .jcc-body-item-list-info{
 	display: block;
@@ -55,10 +58,13 @@
 	line-height: 20px;
 	font-size: 14px;
 	font-weight: normal;
-	color: #333333;
+	color: #666666;
 	width: 94%;
 	float: left;
+	margin-left: 3%;
+	text-align: center;
 }
+
 
 .jcc-body-item-list-info a{
 	color: #299ADB;
@@ -67,15 +73,16 @@
 
 .jcc-body-item-list-info b{
 	font-weight: bold;
+	color: #666666;
 }
 
 
 .jcc-body-item-list-ico{
 	display: block;
-	float: left;
+	margin: 0 auto;
 	height: 85px;
 	width: 85px;
-	background: #666666;
+	background: #299ADB;
 	border-radius: 100%;
 }
 
@@ -83,10 +90,10 @@
 .jcc-body-item-list-ico img{
 	display: block;
 	float: left;
-	height: 55px;
-	width: 55px;
-	margin-left: 15px;
-	margin-top: 15px;
+	height: 45px;
+	width: 45px;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
 
@@ -98,17 +105,18 @@
 
 .jcc-body-school{
 	display: block;
-	width: 1120px;
+	width: 100%;
 	min-height: 140px;
-	margin: 0 auto;
-	margin-top: 60px;
+	float: left;
+	margin-top: 80px;
 }
 
 .jcc-body-school-list{
 	display: block;
 	width: 1120px;
 	min-height: 140px;
-	float: left;
+	margin: 0 auto;
+	
 }
 
 .jcc-body-school-list li{
@@ -132,6 +140,7 @@
 	padding: 10px;
 	border: 1px solid #DDDDDD;
 	border-radius: 8px;
+	margin: 0 auto;
 }
 
 
@@ -141,15 +150,24 @@
 	min-height: 20px;
 	padding: 10px;
 	font-size: 12px;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
 }
+
+
+
+
+
+
 
 
 .jcc-body-unit{
 	display: block;
-	width: 1120px;
+	width: 100%;
 	min-height: 100px;
-	margin: 0 auto;
-	margin-top: 60px;
+	float: left;
+	margin-top: 80px;
 }
 
 
@@ -157,7 +175,7 @@
 	display: block;
 	width: 1120px;
 	min-height: 100px;
-	float: left;
+	margin: 0 auto;
 }
 
 
@@ -183,6 +201,20 @@
 	padding: 10px;
 	border:1px solid #DDDDDD;
 	border-radius: 8px;
+	margin:  0 auto;
+}
+
+
+.jcc-body-unit-list li a span{
+	display: block;
+	width: 140px;
+	min-height: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 12px;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 
@@ -193,3 +225,53 @@
 
 
 
+
+
+.jcc-body-msg{
+	display: block;
+	width: 100%;
+	height: 120px;
+	float: left;
+	margin-top: 80px;
+}
+
+.jcc-body-msg p{
+	display: block;
+	width: 1120px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	text-align:center;
+	font-size: 32px;
+}
+.jcc-body-msg span{
+	display: block;
+	width: 120px;
+	height: 3px;
+	background: #187CB6;
+	margin: 0 auto;
+	margin-top: 15px;
+
+}
+
+
+.jcc-body-picture{
+	display: block;
+	width: 100%;
+	height: 120px;
+	float: left;
+	margin-top: 80px;
+	background: url(../img/other/cta.jpg) no-repeat center;
+}
+
+
+.jcc-body-picture p {
+	display: block;
+	width: 100%;
+	height: 120px;
+	float: left;
+	line-height: 120px;
+	text-align:center;
+	font-size: 32px;
+	color: #FFFFFF;
+}
