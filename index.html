@@ -46,33 +46,39 @@
 		
 		<div class="jcc-body">
 			<div class="jcc-body-banner">
-				<div class="jcc-body-logo">
-					<p id="jcc-body-banner-title">IEEE JCC 2020</p>
-					<p id="jcc-body-banner-describe">The 10th IEEE International Conference On Joint Cloud Computing</p>
-					<p id="jcc-body-banner-time"> 4th - 9th, April, 2020, East Bay, San Francisco, USA </p>
-					<p id="jcc-body-info">
-						co-located with 
-						<a href="http://www.ieeesose.net/"> 13th IEEE SOSE 2020</a>
-					</p>
-					<p id="jcc-body-banner-button">
-						<span>
-							<a href="callfropapers.html" class="jcc-body-banner-button-left">
-								<img src="img/ico/plane.png" />
-								Call For Papers
-							</a>
-							<a href="program.html" class="jcc-body-banner-button-right">
-								<img src="img/ico/program.png" />
-								JCC 2020 Program
-							</a>
-						</span>
-					</p>
-					<a href="intro.html" id="jcc-body-banner-link">
-						<code>Exploring cloud 2.0 and beyond</code>
-						<span>
-							<img src="img/ico/gotolink.png" />
-						</span>
-					</a>
+				<div id="jcc-body-logo" class="jcc-body-logo" >
+					<div class="jcc-body-rgba">
+						<p id="jcc-body-banner-title">IEEE JCC 2020</p>
+						<p id="jcc-body-banner-describe">The 8th IEEE International Conference on Mobile Cloud Computing</p>
+						<p id="jcc-body-banner-time"> April 13-16, 2020 Oxford, United Kingdom</p>
+						<p id="jcc-body-info">
+							Co-located with 
+							<a href="http://www.ieeesose.net/">four other IEEE conferences</a>
+						</p>
+						<p id="jcc-body-banner-button">
+							<span>
+								<a href="callfropapers.html" class="jcc-body-banner-button-left">
+									<!--<img src="img/ico/plane.png" />-->
+									Call For Papers
+								</a>
+								<a href="program.html" class="jcc-body-banner-button-right">
+									JCC 2020 Program
+								</a>
+							</span>
+						</p>
+						<!--<a href="intro.html" id="jcc-body-banner-link">
+							<code>Exploring cloud 2.0 and beyond</code>
+							<span>
+								<img src="img/ico/gotolink.png" />
+							</span>
+						</a>-->
+					</div>
 				</div>
+			</div>
+			
+			<div class="jcc-body-msg">
+				<p>Basic Introduction to JCC</p>
+				<span></span>
 			</div>
 			
 			<div class="jcc-body-item">
@@ -107,6 +113,10 @@
 				</ul>
 			</div>
 			
+			<div class="jcc-body-picture">
+				<p>Cooperative Schools</p>
+			</div>
+			
 			<div class="jcc-body-school">
 				<ul class="jcc-body-school-list">
 					<li>
@@ -130,7 +140,7 @@
 					<li>
 						<a target="_blank" href="https://www.sjtu.edu.cn">
 							<img src="img/ico/sjtu.png" />
-							<span>Shaohai Jiao Tong University</span>
+							<span>Shanghai Jiao Tong University</span>
 						</a>
 					</li>
 					<li>
@@ -148,36 +158,46 @@
 				</ul>
 			</div>
 			
+			<div class="jcc-body-picture">
+				<p>Cooperative Enterprises</p>
+			</div>
+			
 			<div class="jcc-body-unit">
 				<ul class="jcc-body-unit-list">
 					<li>
 						<a target="_blank" href="http://www.iscas.cas.cn/">
 							<img src="img/ico/iscas.png" />
+							<span>Institute of Software Chinese Academy of Sciences</span>
 						</a>
 					</li>
 					<li>
 						<a target="_blank" href="https://www.aliyun.com/">
 							<img src="img/ico/aliyun.png" />
+							<span>Alibaba Cloud</span>
 						</a>
 					</li>
 					<li>
 						<a target="_blank" href="https://www.ucloud.cn/">
 							<img src="img/ico/ucloud.png" />
+							<span>UCloud</span>
 						</a>
 					</li>
 					<li>
 						<a target="_blank" href="https://www.ksyun.com/">
 							<img src="img/ico/jinshan.png" />
+							<span>Kingsoft Cloud</span>
 						</a>
 					</li>
 					<li>
 						<a target="_blank" href="https://www.cert.org.cn/">
 							<img src="img/ico/cncert.png" />
+							<span>National Internet Emergency Center，CNCERT/CC</span>
 						</a>
 					</li>
 					<li>
 						<a target="_blank" href="http://www.fnii.cn/">
 							<img src="img/ico/futurenet.png" />
+							<span>Future Network Innovation Research Institute</span>
 						</a>
 					</li>
 				</ul>
@@ -193,3 +213,20 @@
 		
 	</body>
 </html>
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript">
+	$(function(){
+		var flag = 1;
+		
+		setInterval(function(){
+			if(flag == 1){
+				$(".jcc-body-logo").css("background","url(img/other/slider-2.jpg) no-repeat center");
+				flag = 2;
+			}else{
+				$(".jcc-body-logo").css("background","url(img/other/slider-1.jpg) no-repeat center");
+				flag = 1;
+			}
+			
+		},5000);
+	});
+</script>
