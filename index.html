@@ -2,19 +2,25 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>JCC 2020</title>
 		<link type="text/css" rel="stylesheet" href="css/base.css" />
 		<link type="text/css" rel="stylesheet" href="css/common.css" />
-		<link type="text/css" rel="stylesheet" href="css/home.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<link type="text/css" rel="stylesheet" href="css/style3.css" />
 	</head>
 	<body>
-		<header class="jcc-header">
-			<div class="jcc-header-nav">
-				<a href="index.html" class="jcc-header-nav-logo">
+		
+		
+		<!--Header-->
+		<header class="jointcloud-header">
+			<div class="jointcloud-header-panel">
+				<a href="index.html" class="jointcloud-header-logo">
 					JCC 2020
 				</a>
-				<ul class="jcc-header-nav-item">
+				<ul class="jointcloud-header-navigation">
 					<li>
 						<a href="index.html" class="jcc-active">
 							Home
@@ -31,7 +37,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="callfropapers.html">
+						<a href="cfp.html">
 							Call For Papers
 						</a>
 					</li>
@@ -43,169 +49,236 @@
 				</ul>
 			</div>
 		</header>
+		<div class="jointcloud-fill"></div>
 		
-		<div class="jcc-body">
-			<div class="jcc-body-banner">
-				<div id="jcc-body-logo" class="jcc-body-logo" >
-					<div class="jcc-body-rgba">
-						<p id="jcc-body-banner-title">IEEE JCC 2020</p>
-						<p id="jcc-body-banner-describe">The 8th IEEE International Conference on Mobile Cloud Computing</p>
-						<p id="jcc-body-banner-time"> April 13-16, 2020 Oxford, United Kingdom</p>
-						<p id="jcc-body-info">
-							Co-located with 
-							<a href="http://www.ieeesose.net/">four other IEEE conferences</a>
-						</p>
-						<p id="jcc-body-banner-button">
-							<span>
-								<a href="callfropapers.html" class="jcc-body-banner-button-left">
-									<!--<img src="img/ico/plane.png" />-->
-									Call For Papers
-								</a>
-								<a href="program.html" class="jcc-body-banner-button-right">
-									JCC 2020 Program
-								</a>
-							</span>
-						</p>
-						<!--<a href="intro.html" id="jcc-body-banner-link">
-							<code>Exploring cloud 2.0 and beyond</code>
-							<span>
-								<img src="img/ico/gotolink.png" />
-							</span>
-						</a>-->
-					</div>
+		
+		<!--Banner-->
+		<nav class="jointcloud-banner">
+			<div class="jointcloud-banner-panel">
+				<div id="jointcloudbanner" class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="img">
+								<img src="img/banner-2.jpg" height="550" width="1120" alt="" />
+							</div>
+						</li>
+						<li>
+							<div class="img">
+								<img src="img/banner-3.jpg" height="550" width="1120" alt="" />
+							</div>
+						</li>
+						<li>
+							<div class="img">
+								<img src="img/banner-1.jpg" height="550" width="1120" alt="" />
+							</div>
+						</li>
+					</ul>
+				
+				</div>
+				<div class="jointcloud-banner-opacity">
+					<p id="jointcloud-banner-title">IEEE JCC 2020</p>
+					<p id="jointcloud-banner-describe">The 1st IEEE INTERNATIONAL CONFERENCE ON JOINTCLOUD COMPUTING</p>
+					<p id="jointcloud-banner-time"> April 13-16, 2020 Oxford, United Kingdom</p>
+					<p id="jointcloud-banner-info">
+						Co-located with 
+						<a href="http://www.ieeesose.net/">four other IEEE conferences</a>
+					</p>
+					<p id="jointcloud-banner-button">
+						<span>
+							<a href="cfp.html" class="jointcloud-banner-button-left">
+								<!--<img src="img/ico/plane.png" />-->
+								Call For Papers
+							</a>
+							<a href="program.html" class="jointcloud-banner-button-right">
+								JCC 2020 Program
+							</a>
+						</span>
+					</p>
 				</div>
 			</div>
-			
-			<div class="jcc-body-msg">
-				<p>Basic Introduction to JCC</p>
-				<span></span>
-			</div>
-			
-			<div class="jcc-body-item">
-				<ul class="jcc-body-item-list">
-					<li>
-						<span class="jcc-body-item-list-logo">
-							<img src="img/ico/jcc.png" />
-						</span>
-						<p class="jcc-body-item-list-title">What is JCC</p>
-						<p class="jcc-body-item-list-info">
-							Joint Cloud Computing (JCC) is a recent key project funded by <a target="_blank" href="http://www.most.gov.cn/">China’s Ministry of Science and Technology</a>  as a part of the <b>National Key Program for Cloud Computing and Big Data</b>.
-						</p>
-					</li>
-					<li>
-						<span class="jcc-body-item-list-ico">
-							<img src="img/ico/cloud.png" />
-						</span>
-						<p class="jcc-body-item-list-title">JCC Basic Idea</p>
-						<p class="jcc-body-item-list-info">
-							The concept of JCC is inspired by ideas from airline alliances and aims at empowering the cooperation among various cloud vendors to provide cross-cloud services via software definition.
-						</p>
-					</li>
-					<li>
-						<span class="jcc-body-item-list-ico">
-							<img src="img/ico/team.png" />
-						</span>
-						<p class="jcc-body-item-list-title">JCC Project Team</p>
-						<p class="jcc-body-item-list-info">
-							ranging from top Chinese universitie to major cloud vendors such as <a target="_blank" href="https://www.aliyun.com/">AliCloud</a>, <a target="_blank" href="https://www.ucloud.cn/">UCloud</a>,<a target="_blank" href="https://www.ksyun.com/">JinShanCloud</a> .
-						</p>
-					</li>
-				</ul>
-			</div>
-			
-			<div class="jcc-body-picture">
-				<p>Cooperative Schools</p>
-			</div>
-			
-			<div class="jcc-body-school">
-				<ul class="jcc-body-school-list">
-					<li>
-						<a target="_blank" href="http://www.nudt.edu.cn/">
-							<img src="img/ico/nudt.png" />
-							<span>National University of Defense Technology</span>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://www.tsinghua.edu.cn">
-							<img src="img/ico/tsu.png" />
-							<span>Tsinghua University</span>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://www.buaa.edu.cn">
-							<img src="img/ico/beihang.png" />
-							<span>Beihang University</span>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://www.sjtu.edu.cn">
-							<img src="img/ico/sjtu.png" />
-							<span>Shanghai Jiao Tong University</span>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://www.pku.edu.cn/">
-							<img src="img/ico/pku.png" />
-							<span>Peking University</span>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="http://www.sysu.edu.cn">
-							<img src="img/ico/zhongshan.png" />
-							<span>Sun Yat-sen University</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-			
-			<div class="jcc-body-picture">
-				<p>Cooperative Enterprises</p>
-			</div>
-			
-			<div class="jcc-body-unit">
-				<ul class="jcc-body-unit-list">
-					<li>
-						<a target="_blank" href="http://www.iscas.cas.cn/">
-							<img src="img/ico/iscas.png" />
-							<span>Institute of Software Chinese Academy of Sciences</span>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://www.aliyun.com/">
-							<img src="img/ico/aliyun.png" />
-							<span>Alibaba Cloud</span>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://www.ucloud.cn/">
-							<img src="img/ico/ucloud.png" />
-							<span>UCloud</span>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://www.ksyun.com/">
-							<img src="img/ico/jinshan.png" />
-							<span>Kingsoft Cloud</span>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://www.cert.org.cn/">
-							<img src="img/ico/cncert.png" />
-							<span>National Internet Emergency Center，CNCERT/CC</span>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="http://www.fnii.cn/">
-							<img src="img/ico/futurenet.png" />
-							<span>Future Network Innovation Research Institute</span>
-						</a>
-					</li>
-				</ul>
+		</nav>
+		
+		
+		<!--Message-->
+		<div class="jointcloud-message">
+			<div class="jointcloud-message-panel clearfix">
+				<!--Basic Introduction-->
+				<div class="jointcloud-message-split">
+					<p>Basic Introduction to JCC</p>
+					<span><code><em></em></code></span>
+				</div>
+				<div class="jointcloud-message-introduction">
+					<ul>
+						<li class="jointcloud-message-introduction-list">
+							<div class="box">
+					            <div class="he_border1">
+					                <div class="he_border1_caption">
+					                    <h3 class="he_border1_caption_h">
+					                    	<span class="jointcloud-message-introduction-logo">
+												<img src="img/jcc.png" />
+											</span>
+											<p class="jointcloud-message-introduction-title">What is JCC</p>
+											<p class="jointcloud-message-introduction-info">
+												Joint Cloud Computing (JCC) is a recent key project funded by <a href="javascript:;">China’s Ministry of Science and Technology</a> as a part of the <b>National Key Program for Cloud Computing and Big Data</b>.
+											</p>
+					                    </h3>
+										<p class="he_border1_caption_p"></p>
+										<a target="_blank" class="he_border1_caption_a" href="http://www.most.gov.cn/"></a>
+					                </div>
+					            </div>
+					        </div>
+						</li>
+						<li class="jointcloud-message-introduction-space"></li>
+						<li class="jointcloud-message-introduction-list">
+							<div class="box">
+					            <div class="he_border1">
+					                <div class="he_border1_caption">
+					                    <h3 class="he_border1_caption_h">
+					                    	<span class="jointcloud-message-introduction-ico">
+												<img src="img/cloud.png" />
+											</span>
+											<p class="jointcloud-message-introduction-title">JCC Basic Idea</p>
+											<p class="jointcloud-message-introduction-info">
+												The concept of JCC is inspired by ideas from airline alliances and aims at empowering the cooperation among various cloud vendors to provide cross-cloud services via software definition.
+											</p>
+					                    </h3>
+										<p class="he_border1_caption_p"></p>
+					                </div>
+					            </div>
+					        </div>
+						</li>
+						<li class="jointcloud-message-introduction-space"></li>
+						<li class="jointcloud-message-introduction-list">
+							<div class="box">
+					            <div class="he_border1">
+					                <div class="he_border1_caption">
+					                    <h3 class="he_border1_caption_h">
+					                    	<span class="jointcloud-message-introduction-ico">
+												<img src="img/team.png" />
+											</span>
+											<p class="jointcloud-message-introduction-title">JCC Project Team</p>
+											<p class="jointcloud-message-introduction-info">
+												ranging from top Chinese universitie to major cloud vendors such as <a target="_blank" href="https://www.aliyun.com/">AliCloud</a>, <a target="_blank" href="https://www.ucloud.cn/">UCloud</a>,<a target="_blank" href="https://www.ksyun.com/">JinShanCloud</a>.
+											</p>
+					                    </h3>
+					                    <p class="he_border1_caption_p"></p>
+										<a id="goclick" href="javascript:;" class="he_border1_caption_a"></a>
+					                </div>
+					            </div>
+					        </div>
+						</li>
+					</ul>
+				</div>
+				
+				
+				<!--Cooperative Schools-->
+				<div class="jointcloud-message-picture">
+					<p>Cooperative Schools</p>
+				</div>
+				<div class="jointcloud-message-school">
+					<ul >
+						<li class="jointcloud-message-school-list">
+							<a target="_blank" href="http://www.nudt.edu.cn/">
+								<img src="img/nudt.png" />
+								<span>National University of Defense Technology</span>
+							</a>
+						</li>
+						<li class="jointcloud-message-school-space"></li>
+						<li class="jointcloud-message-school-list">
+							<a target="_blank" href="https://www.tsinghua.edu.cn">
+								<img src="img/tsu.png" />
+								<span>Tsinghua University</span>
+							</a>
+						</li>
+						<li class="jointcloud-message-school-space"></li>
+						<li class="jointcloud-message-school-list">
+							<a target="_blank" href="https://www.buaa.edu.cn">
+								<img src="img/beihang.png" />
+								<span>Beihang University</span>
+							</a>
+						</li>
+						<li class="jointcloud-message-school-list">
+							<a target="_blank" href="https://www.sjtu.edu.cn">
+								<img src="img/sjtu.png" />
+								<span>Shanghai Jiao Tong University</span>
+							</a>
+						</li>
+						<li class="jointcloud-message-school-space"></li>
+						<li class="jointcloud-message-school-list">
+							<a target="_blank" href="https://www.pku.edu.cn/">
+								<img src="img/pku.png" />
+								<span>Peking University</span>
+							</a>
+						</li>
+						<li class="jointcloud-message-school-space"></li>
+						<li class="jointcloud-message-school-list">
+							<a target="_blank" href="http://www.sysu.edu.cn">
+								<img src="img/zhongshan.png" />
+								<span>Sun Yat-sen University</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<!--Cooperative Enterprises-->
+				<div class="jointcloud-message-picture">
+					<p>Cooperative Enterprises</p>
+				</div>
+				<div class="jointcloud-message-enterprises">
+					<ul>
+						<li class="jointcloud-message-enterprises-list">
+							<a target="_blank" href="http://www.iscas.cas.cn/">
+								<img src="img/iscas.png" />
+								<span>Institute of Software Chinese Academy of Sciences</span>
+							</a>
+						</li>
+						<li class="jointcloud-message-introduction-space"></li>
+						<li class="jointcloud-message-enterprises-list">
+							<a target="_blank" href="https://www.aliyun.com/">
+								<img src="img/aliyun.png" />
+								<span>Alibaba Cloud</span>
+							</a>
+						</li>
+						<li class="jointcloud-message-introduction-space"></li>
+						<li class="jointcloud-message-enterprises-list">
+							<a target="_blank" href="https://www.ucloud.cn/">
+								<img src="img/ucloud.png" />
+								<span>UCloud</span>
+							</a>
+						</li>
+						<li class="jointcloud-message-enterprises-list">
+							<a target="_blank" href="https://www.ksyun.com/">
+								<img src="img/jinshan.png" />
+								<span>Kingsoft Cloud</span>
+							</a>
+						</li>
+						<li class="jointcloud-message-introduction-space"></li>
+						<li class="jointcloud-message-enterprises-list">
+							<a target="_blank" href="https://www.cert.org.cn/">
+								<img src="img/cncert.png" />
+								<span>National Internet Emergency Center，CNCERT/CC</span>
+							</a>
+						</li>
+						<li class="jointcloud-message-introduction-space"></li>
+						<li class="jointcloud-message-enterprises-list">
+							<a target="_blank" href="http://www.fnii.cn/">
+								<img src="img/futurenet.png" />
+								<span>Future Network Innovation Research Institute</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				
 			</div>
 		</div>
 		
-		<footer class="jcc-footer">
-			<div class="jcc-footer-info">
+		
+		<!--Footer-->
+		<div class="jointcloud-footer-space"></div>
+		<footer class="jointcloud-footer">
+			<div class="jointcloud-footer-panel">
 				<a target="_blank" href="http://jointcloud.trustie.net"><code>©</code>&nbsp;JCC Team</a>
 				<p>The website was established by the National University of Defense Science and Technology</p>
 			</div>
@@ -213,20 +286,24 @@
 		
 	</body>
 </html>
-<script type="text/javascript" src="js/jquery.min.js" ></script>
-<script type="text/javascript">
-	$(function(){
-		var flag = 1;
-		
-		setInterval(function(){
-			if(flag == 1){
-				$(".jcc-body-logo").css("background","url(img/other/slider-2.jpg) no-repeat center");
-				flag = 2;
-			}else{
-				$(".jcc-body-logo").css("background","url(img/other/slider-1.jpg) no-repeat center");
-				flag = 1;
-			}
-			
-		},5000);
+<script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/slider.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+	$('#jointcloudbanner').flexslider({
+		animation: "slide",
+		direction:"horizontal",
+		slideshowSpeed:10000,
+		directionNav: false, 
+		controlNav: false, 
+		mousewheel: false, 
+		easing:"swing"
+
+	});	
+	
+	$("#goclick").live("click",function(){
+		window.open("https://www.aliyun.com/","aliyun");
+		window.open("https://www.ucloud.cn/","ucloud");
+		window.open("https://www.ksyun.com/","ksyun");
 	});
+	
 </script>
