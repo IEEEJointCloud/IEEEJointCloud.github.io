@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>JCC 2020</title>
+		<link type="text/css" rel="stylesheet" href="css/base.css" />
+		<link type="text/css" rel="stylesheet" href="css/common.css" />
+		<link type="text/css" rel="stylesheet" href="css/other.css" />
+	</head>
+	<body>
+		
+		<!--Header-->
+		<header class="jointcloud-header">
+			<div class="jointcloud-header-panel">
+				<a href="index.html" class="jointcloud-header-logo">
+					JCC 2020
+				</a>
+				<ul class="jointcloud-header-navigation">
+					<li>
+						<a href="index.html">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="intro.html">
+							Intro
+						</a>
+					</li>
+					<li>
+						<a href="program.html" class="jcc-active">
+							Program
+						</a>
+					</li>
+					<li>
+						<a href="cfp.html">
+							Call For Papers
+						</a>
+					</li>
+					<li>
+						<a href="organizers.html">
+							Organizers
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="jointcloud-fill"></div>
+		
+		
+		<div class="jointcloud-content">
+			<div class="jointcloud-content-panel">
+				<!--<div class="jointcloud-content-leftcont">
+					<ul>
+						<li style="background: #d9e7ef;">
+							<span class="jcc-active"></span>
+							<a href="#jcc-2020-program" class="jcc-active">
+								JCC 2020 Program
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="jointcloud-content-rightcont">
+					<h1 id="jcc-2020-program">JCC 2020 Program</h1>
+					<p>Under construction</p>
+				</div>-->
+				<div class="jointcloud-content-center">
+					<p>Under construction</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--Footer-->
+		<div class="jointcloud-footer-space"></div>
+		<footer class="jointcloud-footer">
+			<div class="jointcloud-footer-panel">
+				<a target="_blank" href="http://jointcloud.trustie.net"><code>©</code>&nbsp;JCC Team</a>
+				<p>The website was established by the National University of Defense Science and Technology</p>
+			</div>
+		</footer>
+		
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+	$(".jointcloud-content-leftcont ul li a").hover(function(){
+		$(this).addClass("jcc-active");
+		$(this).parent().find("span").addClass("jcc-active");
+		$(this).parent().css("background","#d9e7ef");
+	},function(){
+		if($(this).attr("flag") != "1"){
+			$(this).removeClass("jcc-active");
+			$(this).parent().find("span").removeClass("jcc-active");
+			$(this).parent().css("background","#EEEEEE");
+		}
+	});
+	
+	$(".jointcloud-content-leftcont ul li a").live("click",function(){
+		$(".jointcloud-content-leftcont ul li span").removeClass("jcc-active");
+		$(".jointcloud-content-leftcont ul li a").removeClass("jcc-active");
+		$(".jointcloud-content-leftcont ul li").css("background","#EEEEEE");
+		//$(".jointcloud-content-leftcont ul li").css("border-right","5px solid #EEEEEE");
+		
+		$(this).addClass("jcc-active");
+		$(this).parent().find("span").addClass("jcc-active");
+		$(this).parent().css("background","#d9e7ef");
+		//$(this).parent().css("border-right","3px solid #187cb6");
+		
+		$(".jointcloud-content-leftcont ul li a").attr("flag","0"); 
+		$(this).attr("flag","1"); 
+	});
+	
+</script>
