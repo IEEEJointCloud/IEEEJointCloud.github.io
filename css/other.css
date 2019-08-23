@@ -1,13 +1,18 @@
-.jcc-body-panel{
+.jointcloud-content{
 	display: block;
-	min-height: 40px;
-	width: 1120px;
-	margin: 0 auto;
-	margin-top: 55px;
-	
+	width: 100%;
+	min-height: 480px;
+	float: left;
 }
 
-.jcc-body-nav{
+.jointcloud-content-panel{
+	display: block;
+	width: 1120px;
+	min-height: 480px;
+	margin: 0 auto;
+}
+
+.jointcloud-content-leftcont{
 	display: block;
 	min-height: 40px;
 	width: 258px;
@@ -16,7 +21,20 @@
 	margin-top: 20px;
 }
 
-.jcc-body-nav ul{
+
+.jointcloud-content-rightcont{
+	display: block;
+	min-height: 440px;
+	width: 800px;
+	padding: 20px;
+	float: left;
+	background: #FFFFFF;
+	margin-top: 20px;
+	border-bottom: 1px solid #BBBBBB;
+}
+
+
+.jointcloud-content-leftcont ul{
 	position: fixed;
 	display: block;
 	min-height: 20px;
@@ -24,37 +42,38 @@
 	padding: 10px;
 	float: left;
 	border: 1px solid #DDDDDD;
-	border-radius: 5px;
 	background: #EFEFEF;
 	overflow: hidden;
 }
 
 
-.jcc-body-nav li{
+.jointcloud-content-leftcont li{
 	display: block;
 	min-height: 0px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 100%;
+	border-right: 3px solid #EEEEEE;
 	float: left;
 }
 
 
-.jcc-body-nav li span{
+.jointcloud-content-leftcont li span{
 	display: block;
 	height: 5px;
 	width: 5px;
 	background: #666666;
 	float: left;
 	margin-top: 7px;
+	margin-left: 5px;
 	
 }
 
-.jcc-body-nav li span.jcc-active{
+.jointcloud-content-leftcont li span.jcc-active{
 	background: #187CB6;
 }
 
-.jcc-body-nav li a{
+.jointcloud-content-leftcont li a{
 	display: block;
 	min-height: 20px;
 	width: 90%;
@@ -64,68 +83,53 @@
 	color: #666666;
 }
 
-.jcc-body-nav li a:hover{
-	color: #187CB6;
-}
-
-.jcc-body-nav li a.jcc-active{
+.jointcloud-content-leftcont li a.jcc-active{
 	color: #187CB6;
 }
 
 
 
 
-
-
-
-
-
-.jcc-body-content{
+.jointcloud-content-rightcont h1{
 	display: block;
-	min-height: 220px;
-	width: 820px;
-	padding: 10px;
-	float: left;
-}
-
-.jcc-body-content h1{
-	display: block;
-	height: 80px;
+	height: 60px;
 	width: 100%;
-	line-height: 80px;
+	line-height: 60px;
 	font-size: 36px;
 	color: #000000;
 	font-weight: bold;
 	float: left;
+	margin-bottom: 20px;
 }
 
-.jcc-body-content h2{
+.jointcloud-content-rightcont h2{
 	display: block;
-	height: 35px;
+	height: 45px;
 	width: 100%;
-	line-height: 35px;
+	line-height: 45px;
 	font-size: 18px;
 	color: #FFFFFF;
 	margin-bottom: 10px;
 	float: left;
-	background: url(../img/other/cta.jpg) no-repeat center;
-	text-indent: 5px;
+	background: url(../img/cta.jpg) no-repeat center;
+	text-indent: 10px;
 }
 
-.jcc-body-content p{
+.jointcloud-content-rightcont p{
 	width: 100%;
-	line-height: 24px;
+	line-height: 28px;
 	font-size: 14px;
 	color: #666666;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	text-indent: 40px;
 }
 
-.jcc-body-content p strong{
+.jointcloud-content-rightcont p strong{
 	font-weight: bold;
 	color: #000000;
 }
 
-.jcc-body-content ul{
+.jointcloud-content-rightcont ul{
 	display: block;
 	width: 100%;
 	float: left;
@@ -133,49 +137,55 @@
 	margin-bottom: 5px;
 }
 
-.jcc-body-content ul li{
+.jointcloud-content-rightcont ul li{
 	display: block;
 	width: 100%;
 	float: left;
-	height: 30px;
+	min-height: 30px;
+	border-radius: 5px;
 }
 
-.jcc-body-content ul li p{
+.jointcloud-content-rightcont ul li p{
 	line-height: 30px;
 	color: #666666;
 	font-size: 14px;
+	float: left;
+	width: 92%;
+	text-indent: 0px;
 }
 
-.jcc-body-content ul li p a{
+.jointcloud-content-rightcont ul li p a{
 	color: #299ADB;
 	font-size: 14px;
+	text-decoration: underline;
 }
 
-.jcc-body-content ul li span{
+.jointcloud-content-rightcont ul li span{
 	display: block;
 	height: 5px;
 	width: 5px;
-	background: #666666;
+	background: #187cb6;
 	float: left;
 	margin-top: 12px;
 	margin-right: 10px;
-	margin-left: 15px;
+	margin-left: 45px;
 	border-radius: 100%;
+	float: left;
 	
 }
 
-.jcc-body-content ul li p strike{
+.jointcloud-content-rightcont ul li p strike{
 	color: #666666;
 	font-size: 14px;
 	text-decoration: line-through;
 }
 
-.jcc-body-content ul li p em{
+.jointcloud-content-rightcont ul li p em{
 	color: #CF2D28;
 	font-size: 14px;
 }
 
-.jcc-body-content p a{
+.jointcloud-content-rightcont p a{
 	color: #299ADB;
 	font-size: 14px;
 }
@@ -245,3 +255,33 @@ table.altrowstable td strong{
 	color: #333333;
 	font-weight: bold;
 }
+
+.jointcloud-content-center{
+	display: block;
+	width: 1120px;
+	height: 480px;
+	float: left;
+	background: #FFFFFF;
+	margin-top: 20px;
+}
+
+.jointcloud-content-center p{
+	display: block;
+	width: 1120px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	text-align: center;
+	float: left;
+	margin-top: 120px;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+

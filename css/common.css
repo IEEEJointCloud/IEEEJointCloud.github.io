@@ -1,138 +1,144 @@
-.jcc-header{
-	display: block;
-	width: 100%;
-	height: 55px;
-	float: left;
-	background: #299adb;
+/*
+ * JOINTCLOUD HRADER
+ *  
+ * */
+.jointcloud-header{
 	position: fixed;
-	left: 0px;
+	height: 65px;
+	width: 100%;
 	top: 0px;
-	box-shadow: 0px 1px 10px #187CB6;
-	-webkit-box-shadow: 0px 1px 10px #187CB6; 
-	-moz-box-shadow: 0px 1px 10px #187CB6;
-	border-collapse:separate !important;
+	left: 0px;
+	background: #299adb;
+	z-index: 19911225;
 }
 
-.jcc-header-nav{
-	display: block;
+.jointcloud-header-panel{
+	height: 65px;
 	width: 1120px;
-	height: 55px;
 	margin: 0 auto;
 }
 
-.jcc-header-nav-logo{
+.jointcloud-header-logo{
 	display: block;
 	min-width: 0px;
-	height: 55px;
-	line-height: 55px;
-	padding-left: 15px;
-	padding-right: 15px;
+	height: 65px;
+	line-height: 65px;
+	padding-left: 25px;
+	padding-right: 25px;
 	float: left;
 	font-size: 18px;
 	color: #FFFFFF;
+	font-weight: bold;
 }
 
-
-
-.jcc-header-nav-item{
+.jointcloud-header-navigation{
 	display: block;
-	height: 55px;
+	height: 65px;
 	min-width: 0px;
 	float: left;
 }
 
-.jcc-header-nav-item li{
+.jointcloud-header-navigation li{
 	display: block;
-	height: 55px;
+	height: 65px;
 	min-width: 0px;
 	float: left;
 }
 
-.jcc-header-nav-item li a{
+.jointcloud-header-navigation li a{
 	display: block;
 	min-width: 0px;
-	height: 55px;
-	line-height: 55px;
-	padding-left: 18px;
-	padding-right: 18px;
+	height: 65px;
+	line-height: 65px;
+	padding-left: 25px;
+	padding-right: 25px;
 	font-size: 14px;
 	color: #FFFFFF;
 	float: left;
 }
 
-.jcc-header-nav-item li a:hover{
+.jointcloud-header-navigation li a:hover{
 	background: #187cb6;
 }
 
-.jcc-header-nav-item li a.jcc-active{
+.jointcloud-header-navigation li a.jcc-active{
 	background: #187cb6;
 }
 
-.jcc-body{
-	width: 100%;
-	min-height: 540px;
-	background: url(../img/ico/grid.png);
-	float: left;
-	padding-bottom: 80px;
-}
-
-.jcc-body-banner{
+.jointcloud-fill{
 	display: block;
 	width: 100%;
-	height: 540px;
+	height: 65px;
 	float: left;
-	margin-top: 55px;
+}
+
+
+
+
+
+
+/*
+ * JOINTCLOUD BANNER
+ *  
+ * */
+.jointcloud-banner{
+	display: block;
+	width: 100%;
+	height: 550px;
+	float: left;
 	background: rgba(0,0,0,0.8);
-	overflow: hidden;
+    overflow: hidden;
 }
 
-.jcc-body-logo{
-	display: block;
+.jointcloud-banner-panel{
+	height: 550px;
 	width: 1120px;
-	height: 540px;
-	padding: 0px;
 	margin: 0 auto;
-	background: url(../img/other/slider-1.jpg) no-repeat center;
+	background: #000000;
 }
 
-.jcc-body-rgba{
-	display: block;
+.jointcloud-banner-opacity{
+	position: absolute;
+	height: 550px;
 	width: 1120px;
-	height: 540px;
-	padding: 0px;
-	float: left;
 	background: rgba(0,0,0,0.3);
+	z-index: 99;
+	margin: -550px;
+	left: 50%;
+	margin-left: -560px;
 }
 
-#jcc-body-banner-title{
+#jointcloud-banner-title{
 	display: block;
-	width: 100%;
+	width: 90%;
 	height: 60px;
 	line-height: 60px;
 	text-align: center;
 	font-size: 60px;
 	font-weight: bold;
 	color: #FFFFFF;
-	margin-top: 100px;
+	margin-top: 80px;
+	margin-left: 5%;
 	float: left;
 	text-transform: uppercase;
 }
 
-#jcc-body-banner-describe{
+#jointcloud-banner-describe{
 	display: block;
-	width: 100%;
+	width: 90%;
+	margin-left: 5%;
 	min-height: 35px;
 	line-height: 35px;
 	text-align: center;
 	font-size: 30px;
 	float: left;
 	color: #FFFFFF;
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-bottom: 10px;
 	text-transform: uppercase;
 }
 
-#jcc-body-banner-time{
+#jointcloud-banner-time{
 	display: block;
 	width: 100%;
 	height: 30px;
@@ -146,7 +152,7 @@
 	text-transform: uppercase;
 }
 
-#jcc-body-info{
+#jointcloud-banner-info{
 	display: block;
 	width: 100%;
 	height: 40px;
@@ -159,7 +165,7 @@
 	text-transform: uppercase;
 }
 
-#jcc-body-info a{
+#jointcloud-banner-info a{
 	font-size: 18px;
 	font-weight: normal;
 	color: #FFFFFF;
@@ -167,27 +173,27 @@
 	text-decoration: underline;
 }
 
-#jcc-body-info a:hover{
+#jointcloud-banner-info a:hover{
 	color: #CCCCCC;
 }
 
 
-#jcc-body-banner-button{
+#jointcloud-banner-button{
 	display: block;
 	width: 100%;
 	height: 62px;
-	margin-top: 30px;
+	margin-top: 60px;
 	float: left;
 }
 
 
-#jcc-body-banner-button span{
+#jointcloud-banner-button span{
 	display: block;
 	width: 504px;
 	margin: 0 auto;
 }
 
-.jcc-body-banner-button-left{
+.jointcloud-banner-button-left{
 	display: block;
 	width: 225px;
 	height: 60px;
@@ -203,20 +209,11 @@
 	text-transform: uppercase;
 }
 
-.jcc-body-banner-button-left:hover{
+.jointcloud-banner-button-left:hover{
 	background: #187CB6;
 }
 
-.jcc-body-banner-button-left img{
-	display: block;
-	width: 25px;
-	width: 25px;
-	float: left;
-	margin-top: 15px;
-	margin-left: 12px;
-}
-
-.jcc-body-banner-button-right{
+.jointcloud-banner-button-right{
 	display: block;
 	width: 225px;
 	height: 60px;
@@ -231,83 +228,372 @@
 	text-transform: uppercase;
 }
 
-.jcc-body-banner-button-right:hover{
+.jointcloud-banner-button-right:hover{
 	background: #DDDDDD;
 	border: 1px solid #DDDDDD;
 }
 
 
-.jcc-body-banner-button-right img{
-	display: block;
-	width: 29px;
-	width: 29px;
-	float: left;
-	margin-top: 13px;
-	margin-left: 22px;
-}
-
-
-
-#jcc-body-banner-link{
+/*
+ * JOINTCLOUD MESSAGE
+ *  
+ * */
+.jointcloud-message{
 	display: block;
 	width: 100%;
-	height: 30px;
-	margin-top: 30px;
+	min-height: 0px;
+	float: left;
 }
 
-#jcc-body-banner-link code{
+.jointcloud-message-panel{
+	display: block;
+	width: 1120px;
+	min-height: 0px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	
+	padding-top: 60px;
+}
+
+.jointcloud-message-split{
+	display: block;
+	width: 1120px;
+	min-height: 30px;
+	float: left;
+	background: #EEEEEE;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.jointcloud-message-split p{
+	display: block;
+	width: 1120px;
+	height: 30px;
+	line-height: 30px;
+	color: #333333;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.jointcloud-message-split span{
 	display: block;
 	width: 240px;
+	height: 3px;
+	background: #BBBBBB;
+	margin: 0 auto;
+}
+
+.jointcloud-message-split span code{
+	display: block;
+	width: 120px;
+	height: 3px;
+	background: #187CB6;
+	margin: 0 auto;
+}
+
+/*.jointcloud-message-split span code em{
+	display: block;
+	width: 30px;
+	height: 3px;
+	background: #000000;
+	margin: 0 auto;
+}*/
+
+.jointcloud-message-introduction{
+	display: block;
+	width: 1120px;
+	height: 280px;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.jointcloud-message-introduction-list{
+	display: block;
+	width: 30%;
+	height: 280px;
+	float: left;
+	cursor: pointer;
+}
+
+.jointcloud-message-introduction-space{
+	display: block;
+	width: 5%;
+	min-height: 50px;
+	float: left;
+}
+
+.jointcloud-message-introduction-logo{
+	display: block;
+	height: 85px;
+	width: 160px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #DDDDDD;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+.jointcloud-message-introduction-logo img{
+	display: block;
+	float: left;
+	height: 85px;
+}
+
+.jointcloud-message-introduction-title{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #000000;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+.jointcloud-message-introduction-info{
+	display: block;
+	min-height: 30px;
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #666666;
+	width: 94%;
+	float: left;
+	margin-left: 3%;
+	text-align: center;
+}
+
+.jointcloud-message-introduction-info a{
+	color: #299ADB;
+}
+
+.jointcloud-message-introduction-info b{
+	font-weight: bold;
+	color: #666666;
+}
+
+.jointcloud-message-introduction-ico{
+	display: block;
+	margin: 0 auto;
+	height: 85px;
+	width: 85px;
+	background: #299ADB;
+	border-radius: 100%;
+	margin-top: 20px;
+}
+
+.jointcloud-message-introduction-ico img{
+	display: block;
+	float: left;
+	height: 45px;
+	width: 45px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.jointcloud-message-picture{
+	display: block;
+	width: 100%;
+	height: 80px;
+	float: left;
+	margin-top: 0px;
+	background: url(../img/cta.jpg) no-repeat center;
+}
+
+.jointcloud-message-picture p {
+	display: block;
+	width: 100%;
+	height: 80px;
+	float: left;
+	line-height: 80px;
+	text-align:center;
+	font-size: 30px;
+	color: #FFFFFF;
+}
+
+.jointcloud-message-school{
+	display: block;
+	width: 1120px;
+	min-height: 0px;
+	float: left;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.jointcloud-message-school-list{
+	display: block;
+	width: 30%;
+	height: 220px;
+	float: left;
+	cursor: pointer;
+	margin-bottom: 20px;
+	background: #F7F7F7;
+}
+
+.jointcloud-message-school-list:hover{
+	background: #EFEFEF;
+}
+
+.jointcloud-message-school-space{
+	display: block;
+	width: 5%;
+	min-height: 50px;
+	float: left;
+}
+
+.jointcloud-message-school-list  a{
+	display: block;
+	width: 100%;
+	height: 220px;
+	float: left;
+}
+
+.jointcloud-message-school-list  a img{
+	display: block;
+	height: 100px;
+	width: 100px;
+	padding: 10px;
+	border: 1px solid #BBBBBB;
+	border-radius: 100%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.jointcloud-message-school-list a span{
+	display: block;
+	width: 70%;
+	min-height: 20px;
+	font-size: 14px;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 20px;
+	color: #666666;
+}
+
+.jointcloud-message-enterprises{
+	display: block;
+	width: 1120px;
+	min-height: 0px;
+	float: left;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.jointcloud-message-enterprises-list{
+	display: block;
+	width: 30%;
+	height: 220px;
+	float: left;
+	cursor: pointer;
+	margin-bottom: 20px;
+	background: #F7F7F7;
+}
+
+.jointcloud-message-enterprises-list:hover{
+	background: #EFEFEF;
+}
+
+.jointcloud-message-enterprises-list a{
+	display: block;
+	width: 100%;
+	height: 180px;
+	float: left;
+}
+
+.jointcloud-message-enterprises-list a img{
+	display: block;
+	height: 55px;
+	border-radius: 5px;
+	margin:  0 auto;
+	margin-top: 30px;
+	background: #FFFFFF;
+	padding: 10px;
+	border: 1px solid #EEEEEE;
+}
+
+.jointcloud-message-enterprises-list a span{
+	display: block;
+	width: 70%;
+	min-height: 20px;
+	font-size: 14px;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 20px;
+	color: #666666;
+}
+
+
+
+
+/*
+ * JOINTCLOUD FOOTER
+ *  
+ * */
+.jointcloud-footer{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	display: block;
+	width: 100%;
+	height: 80px;
+	float: left;
+	background: #EEEEEE;
+    overflow: hidden;
+    margin-top: 50px;
+    border-top:1px solid #BBBBBB;
+    z-index: 19911225;
+}
+
+.jointcloud-footer-panel{
+	display: block;
+	width: 1120px;
+	height: 120px;
+	margin: 0 auto;
+}
+
+.jointcloud-footer-panel a{
+	display: block;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	font-size: 14px;
+	color: #000000;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.jointcloud-footer-panel a span{
+	font-size: 14px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.jointcloud-footer-panel p{
+	display: block;
+	width: 100%;
 	height: 30px;
 	line-height: 30px;
 	float: left;
-	margin-top: 10px;
-	margin-left: 375px;
-	font-size: 16px;
+	font-size: 14px;
+	color: #000000;
 	text-align: center;
-	color: #666666;
+	text-transform: uppercase;
 }
 
-#jcc-body-banner-link img{
-	display: block;
-	height: 30px;
-	float: left;
-	margin-top: 10px;
-}
-
-
-
-
-.jcc-footer{
+.jointcloud-footer-space{
 	display: block;
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	float: left;
-	background: #FFFFFF;
-	margin-top: 10px;
-}
-
-.jcc-footer-info{
-	display: block;
-	width: 94%;
-	height: 75px;
-	padding-top: 25px;
-	margin: 0 auto;
-	border-top:1px solid #DDDDDD;
-	text-align: center;
-}
-
-.jcc-footer-info a{
-	color: #299ADB;
-	font-size: 12px;
-}
-
-.jcc-footer-info p{
-	display: block;
-	float: left;
-	height: 30px;
-	width: 100%;
-	font-size: 12px;
-	margin-top: 5px;
-	color: #666666;
+    margin-top: 50px;
 }

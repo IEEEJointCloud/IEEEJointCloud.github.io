@@ -9,8 +9,8 @@
 	margin: 0px;
 }
 
-html,body{
-	background: rgba(255,255,255,1);
+body{
+	background: url(../img/bg.jpg);
 	width: 100%;
 }
 
