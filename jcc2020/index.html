@@ -46,6 +46,11 @@
 							Organizers
 						</a>
 					</li>
+					<li>
+						<a href="Venue.html">
+							Venue
+						</a>
+					</li>
 				</ul>
 			</div>
 		</header>
@@ -59,17 +64,17 @@
 					<ul class="slides">
 						<li>
 							<div class="img">
-								<img src="img/banner-2.jpg" height="550" width="1120" alt="" />
+								<img src="img/banner-2.jpg" style="width: 100%;height: 650px;" alt="" />
 							</div>
 						</li>
 						<li>
 							<div class="img">
-								<img src="img/banner-3.jpg" height="550" width="1120" alt="" />
+								<img src="img/banner-3.jpg" style="width: 100%;height: 650px;" alt="" />
 							</div>
 						</li>
 						<li>
 							<div class="img">
-								<img src="img/banner-1.jpg" height="550" width="1120" alt="" />
+								<img src="img/banner-1.jpg" style="width: 100%;height: 650px;" alt="" />
 							</div>
 						</li>
 					</ul>
@@ -102,6 +107,32 @@
 		<!--Message-->
 		<div class="jointcloud-message">
 			<div class="jointcloud-message-panel clearfix">
+				<!--Basic Introduction-->
+				<div class="jointcloud-message-split">
+					<p>NEWS TO JCC</p>
+					<span><code><em></em></code></span>
+				</div>
+				<div class="jointcloud-message-news">
+					<div class="jointcloud-message-news-left">
+						<p class="news-date">
+							July 22, 2019:
+						</p>
+						<p class="news-info">
+							<span></span>
+							The second edition of the IEEE International Conference on Decentralized Applications and Infrastructures (IEEE DAPPS 2020) will take place from April 13-16, 2020 at Keble College in Oxford, United Kingdom.
+						</p>
+						<p class="news-info">
+							<span></span>
+							Please note that the conference acronym has changed since last time. Before, the conference was known as IEEE DAPPCON. The new conference acronym is now IEEE DAPPS.
+						</p>
+					</div>
+					<div class="jointcloud-message-news-right">
+						<img src="img/new-1.jpg" style="display: block;"/>
+						<img src="img/new-2.jpg" style="display: none;"/>
+					</div>
+				</div>
+					
+					
 				<!--Basic Introduction-->
 				<div class="jointcloud-message-split">
 					<p>Basic Introduction to JCC</p>
@@ -271,6 +302,40 @@
 				</div>
 				
 				
+				<!--Friendship Links-->
+				<div class="jointcloud-message-picture">
+					<p>Friendship Links</p>
+				</div>
+				<div class="jointcloud-message-links">
+					<p>JCC 2020 will be co-located with four other IEEE conferences:</p>
+					<ul>
+						<li>
+							<a href="http://www.ieeesose.net/">
+								<span></span>
+								The 14th IEEE International Symposium on Service Oriented System Engineering (IEEE SOSE)
+							</a>
+						</li>
+						<li>
+							<a href="http://mobile-cloud.net/">
+								<span></span>
+								The 8th IEEE International Conference on Mobile Cloud Computing, Services, and Engineering (IEEE Mobile Cloud)
+							</a>
+						</li>
+						<li>
+							<a href="http://www.big-dataservice.net/">
+								<span></span>
+								The 6th IEEE International Conference on Big Data Computing Service and Applications (IEEE BigDataService)
+							</a>
+						</li>
+						<li>
+							<a href="http://ieeeaitests.com/">
+								<span></span>
+								The 2nd IEEE International Conference on Artificial Intelligence Testing (IEEE AITest)
+							</a>
+						</li>
+					</ul>
+				</div>
+				
 			</div>
 		</div>
 		
@@ -305,5 +370,19 @@
 		window.open("https://www.ucloud.cn/","ucloud");
 		window.open("https://www.ksyun.com/","ksyun");
 	});
+	
+	var switchFlag = 1;
+	setInterval(function(){
+		if(switchFlag == 1){
+			$(".jointcloud-message-news-right img").eq(0).slideUp();
+			$(".jointcloud-message-news-right img").eq(1).slideDown();
+			switchFlag = 0;
+		}else{
+			$(".jointcloud-message-news-right img").eq(0).slideDown();
+			$(".jointcloud-message-news-right img").eq(1).slideUp();
+			switchFlag = 1;
+		}
+	},5000);
+	
 	
 </script>
