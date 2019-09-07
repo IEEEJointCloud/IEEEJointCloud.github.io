@@ -666,6 +666,13 @@
 	margin-right: 10px;
 }
 
+.jointcloud-message-links p.jointcloud-message-text{
+	font-weight:normal;
+	font-size:12px;
+	height:25px;
+	line-height:25px;
+	color:#666;
+}
 
 
 
