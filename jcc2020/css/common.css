@@ -8,13 +8,13 @@
 	width: 100%;
 	top: 0px;
 	left: 0px;
-	background: rgba(41,154,220,0.9);
+	background: rgba(50,50,60,0.8);
 	z-index: 19911225;
 }
 
 .jointcloud-header-panel{
 	height: 65px;
-	width: 1120px;
+	width: 1240px;
 	margin: 0 auto;
 }
 
@@ -58,11 +58,12 @@
 }
 
 .jointcloud-header-navigation li a:hover{
-	background: #187cb6;
+	background: rgba(74,74,74,0.9);
 }
 
 .jointcloud-header-navigation li a.jcc-active{
-	background: #187cb6;
+	background: rgba(74,74,74,0.9);
+	font-weight: bold;
 }
 
 .jointcloud-fill{
@@ -70,7 +71,7 @@
 	width: 100%;
 	height: 65px;
 	float: left;
-	background: #187cb6;
+	background: #32323c;
 }
 
 
@@ -85,14 +86,14 @@
 .jointcloud-banner{
 	display: block;
 	width: 100%;
-	height: 650px;
+	height: 500px;
 	float: left;
 	background: rgba(0,0,0,0.8);
     overflow: hidden;
 }
 
 .jointcloud-banner-panel{
-	height: 650px;
+	height: 500px;
 	width: 100%;
 	margin: 0 auto;
 	background: #000000;
@@ -100,11 +101,11 @@
 
 .jointcloud-banner-opacity{
 	position: absolute;
-	height: 650px;
+	height: 500px;
 	width: 100%;
 	background: rgba(0,0,0,0.3);
 	z-index: 99;
-	margin-top: -650px;
+	margin-top: -500px;
 	left: 0%;
 }
 
@@ -117,10 +118,11 @@
 	font-size: 60px;
 	font-weight: bold;
 	color: #FFFFFF;
-	margin-top: 120px;
+	margin-top: 60px;
 	margin-left: 5%;
 	float: left;
 	text-transform: uppercase;
+	text-shadow:1px 2px #666666;
 }
 
 #jointcloud-banner-describe{
@@ -136,6 +138,7 @@
 	padding-top: 30px;
 	padding-bottom: 10px;
 	text-transform: uppercase;
+	text-shadow:1px 2px #666666;
 }
 
 #jointcloud-banner-time{
@@ -150,6 +153,7 @@
 	margin-top: 10px;
 	float: left;
 	text-transform: uppercase;
+	text-shadow:1px 2px #666666;
 }
 
 #jointcloud-banner-info{
@@ -163,14 +167,15 @@
 	color: #FFFFFF;
 	float: left;
 	text-transform: uppercase;
+	text-shadow:1px 2px #666666;
 }
 
 #jointcloud-banner-info a{
 	font-size: 18px;
 	font-weight: normal;
-	color: #FFFFFF;
+	color: #F0AD4E;
 	text-transform: uppercase;
-	text-decoration: underline;
+	text-shadow:1px 2px #666666;
 }
 
 #jointcloud-banner-info a:hover{
@@ -182,7 +187,7 @@
 	display: block;
 	width: 100%;
 	height: 62px;
-	margin-top: 60px;
+	margin-top: 50px;
 	float: left;
 }
 
@@ -200,17 +205,19 @@
 	line-height: 60px;
 	font-size: 16px;
 	color: #FFFFFF;
-	background: #299ADB;
+	background: rgba(44,80,144,0.8);
 	border-radius: 3px;
 	float: left;
 	text-align: center;
-	border: 1px solid #187CB6;
+	border: 1px solid #2c508f;
 	margin-right: 50px;
 	text-transform: uppercase;
+	text-shadow:1px 2px #666666;
 }
 
 .jointcloud-banner-button-left:hover{
-	background: #187CB6;
+	background: #187cb6;
+	border: 1px solid #187cb6;
 }
 
 .jointcloud-banner-button-right{
@@ -221,7 +228,7 @@
 	font-size: 16px;
 	color: #333333;
 	text-align: center;
-	background: #FFFFFF;
+	background: rgba(255,255,255,0.8);
 	border-radius: 3px;
 	float: left;
 	border: 1px solid #DDDDDD;
@@ -248,33 +255,35 @@
 
 .jointcloud-message-panel{
 	display: block;
-	width: 1120px;
+	width: 1240px;
 	min-height: 0px;
 	margin: 0 auto;
-	background: #FFFFFF;
-	padding-top: 60px;
-	border-bottom: 1px solid #CCCCCC;
+	padding-top: 40px;
 }
 
 .jointcloud-message-split{
 	display: block;
-	width: 1120px;
-	min-height: 30px;
-	float: left;
-	background: #EEEEEE;
+	width: 1240px;
+	margin: 0 auto;
+	height: 70px;
+	background: #56607c;
 	padding-top: 20px;
-	padding-bottom: 20px;
+	margin-top: 30px;
+	border-radius: 5px;
+	border-bottom: 1px solid #333;
 }
 
 .jointcloud-message-split p{
 	display: block;
-	width: 1120px;
+	width: 100%;
 	height: 30px;
 	line-height: 30px;
-	color: #333333;
+	color: #FEFEFE;
 	font-size: 30px;
 	text-align: center;
+	margin-top: 10px;
 	margin-bottom: 10px;
+	text-shadow:2px 2px #000000;
 }
 
 .jointcloud-message-split span{
@@ -303,43 +312,47 @@
 
 .jointcloud-message-news{
 	display: block;
-	width: 1120px;
+	width: 1240px;
 	height: 280px;
-	float: left;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin: 0 auto;
+	margin-top: 40px;
+	background: #FFFFFF;
+	box-shadow:0px 6px 15px 5px rgba(133,133,133,0.2);
+	border-radius: 5px;
 }
 
 .jointcloud-message-news-left{
 	display: block;
-	width: 560px;
-	height: 280px;
+	width: 1010px;
+	height: 250px;
 	float: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .jointcloud-message-news-right{
 	display: block;
-	width: 560px;
+	width: 230px;
 	height: 280px;
 	float: left;
 }
 
 .news-date{
 	display: block;
-	height: 30px;
-	line-height: 30px;
-	width: 90%;
-	margin-left: 5%;
+	height: 40px;
+	line-height: 40px;
+	width: 94%;
+	margin-left: 3%;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .news-info{
 	display: block;
 	min-height: 30px;
 	line-height: 30px;
-	width: 85%;
-	margin-left: 10%;
+	width: 94%;
+	margin-left: 3%;
 	font-weight: normal;
 	font-size: 14px;
 	text-indent: 8px;
@@ -359,10 +372,12 @@
 
 .jointcloud-message-news-right img{
 	display: block;
-	width: 530px;
-	height: 280px;
+	width: 220px;
+	height: 260px;
 	float: left;
 	cursor: pointer;
+	margin-top: 10px;
+	border-radius: 5px;
 }
 
 
@@ -370,7 +385,7 @@
 
 .jointcloud-message-introduction{
 	display: block;
-	width: 1120px;
+	width: 1240px;
 	height: 280px;
 	float: left;
 	margin-top: 30px;
@@ -383,6 +398,8 @@
 	height: 280px;
 	float: left;
 	cursor: pointer;
+	background: #FEFEFE;
+	border-radius: 5px;
 }
 
 .jointcloud-message-introduction-space{
@@ -472,6 +489,7 @@
 	float: left;
 	margin-top: 0px;
 	background: url(../img/cta.jpg) no-repeat center;
+	border-radius:5px ;
 }
 
 .jointcloud-message-picture p {
@@ -487,7 +505,7 @@
 
 .jointcloud-message-school{
 	display: block;
-	width: 1120px;
+	width: 1240px;
 	min-height: 0px;
 	float: left;
 	margin-top: 50px;
@@ -497,15 +515,17 @@
 .jointcloud-message-school-list{
 	display: block;
 	width: 30%;
-	height: 220px;
+	height: 240px;
 	float: left;
 	cursor: pointer;
 	margin-bottom: 20px;
 	background: #F7F7F7;
+	border-radius: 5px;
 }
 
 .jointcloud-message-school-list:hover{
-	background: #EFEFEF;
+	box-shadow:0px 6px 10px rgba(133,133,133,0.4);
+	background: #FFFFFF;
 }
 
 .jointcloud-message-school-space{
@@ -530,7 +550,7 @@
 	border: 1px solid #BBBBBB;
 	border-radius: 100%;
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .jointcloud-message-school-list a span{
@@ -547,7 +567,7 @@
 
 .jointcloud-message-enterprises{
 	display: block;
-	width: 1120px;
+	width: 1240px;
 	min-height: 0px;
 	float: left;
 	margin-top: 50px;
@@ -557,15 +577,17 @@
 .jointcloud-message-enterprises-list{
 	display: block;
 	width: 30%;
-	height: 220px;
+	height: 180px;
 	float: left;
 	cursor: pointer;
 	margin-bottom: 20px;
 	background: #F7F7F7;
+	border-radius: 5px;
 }
 
 .jointcloud-message-enterprises-list:hover{
-	background: #EFEFEF;
+	box-shadow:0px 6px 10px rgba(133,133,133,0.4);
+	background: #FFFFFF;
 }
 
 .jointcloud-message-enterprises-list a{
@@ -681,24 +703,19 @@
  *  
  * */
 .jointcloud-footer{
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
 	display: block;
 	width: 100%;
-	height: 50px;
+	height: 80px;
 	float: left;
-	background: #EEEEEE;
+	background: rgba(50,50,60,0.8);;
     overflow: hidden;
     margin-top: 50px;
-    border-top:1px solid #BBBBBB;
-    z-index: 19911225;
 }
 
 .jointcloud-footer-panel{
 	display: block;
-	width: 1120px;
-	height: 120px;
+	width: 1240px;
+	height: 80px;
 	margin: 0 auto;
 }
 
@@ -709,15 +726,21 @@
 	line-height: 20px;
 	float: left;
 	font-size: 12px;
-	color: #000000;
+	color: #ffffff;
 	text-align: center;
 	text-transform: uppercase;
-	margin-top: 5px;
+	margin-top: 20px;
 }
 
 .jointcloud-footer-panel a span{
 	font-size: 12px;
-	color: #000000;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.jointcloud-footer-panel a code{
+	font-size: 12px;
+	color: #ffffff;
 	text-transform: uppercase;
 }
 
@@ -728,7 +751,7 @@
 	line-height: 20px;
 	float: left;
 	font-size: 12px;
-	color: #000000;
+	color: #ffffff;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -748,7 +771,7 @@
 	width: 100%;
 	height: 50px;
 	line-height: 50px;
-	color: #FFFFFF;
+	color: #ffffff;
 	font-size: 14px;
 	margin-top: 100px;
 }
