@@ -1,5 +1,5 @@
 *{
-	font-family: Montserrat, sans-serif;
+	font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STXihei, "Microsoft YaHei",SimHei, "WenQuanYi Micro Hei";
     font-size: 14px;
     font-weight: 400;
 	color: #333333;
@@ -10,7 +10,7 @@
 }
 
 body{
-	background: url(../img/bg.jpg);
+	background: #EEEEEE;
 	width: 100%;
 }
 
