@@ -57,10 +57,10 @@
 		
 		
 		<div class="jointcloud-content">
-			<div class="jointcloud-content-panel">
+			<div class="jointcloud-content-panel clearfix">
 				<div class="jointcloud-content-leftcont">
 					<ul>
-						<li style="background: #d9e7ef;">
+						<li style="background: #d9e7ef;border-right: 3px solid #187CB6;">
 							<span class="jcc-active"></span>
 							<a flag="1" href="#introduction-to-joint-cloud-computing" class="jcc-active">
 								Introduction to Joint Cloud Computing
@@ -239,6 +239,12 @@
 <script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
 	$(function(){
+		var height = window.screen.height;
+		var curheight = $(".jointcloud-content-panel").height();
+		if(curheight <= height){
+			$(".jointcloud-content-panel").css("height",curheight+200+"px");
+		}
+		
 		$(".jointcloud-content-leftcont ul li a").hover(function(){
 			$(this).addClass("jcc-active");
 			$(this).parent().find("span").addClass("jcc-active");
@@ -247,20 +253,20 @@
 			if($(this).attr("flag") != "1"){
 				$(this).removeClass("jcc-active");
 				$(this).parent().find("span").removeClass("jcc-active");
-				$(this).parent().css("background","#EEEEEE");
+				$(this).parent().css("background","#FFFFFF");
 			}
 		});
 		
 		$(".jointcloud-content-leftcont ul li a").live("click",function(){
 			$(".jointcloud-content-leftcont ul li span").removeClass("jcc-active");
 			$(".jointcloud-content-leftcont ul li a").removeClass("jcc-active");
-			$(".jointcloud-content-leftcont ul li").css("background","#EEEEEE");
-			//$(".jointcloud-content-leftcont ul li").css("border-right","5px solid #EEEEEE");
+			$(".jointcloud-content-leftcont ul li").css("background","#FFFFFF");
+			$(".jointcloud-content-leftcont ul li").css("border-right","5px solid #FFFFFF");
 			
 			$(this).addClass("jcc-active");
 			$(this).parent().find("span").addClass("jcc-active");
 			$(this).parent().css("background","#d9e7ef");
-			//$(this).parent().css("border-right","3px solid #187cb6");
+			$(this).parent().css("border-right","3px solid #187CB6");
 			
 			$(".jointcloud-content-leftcont ul li a").attr("flag","0"); 
 			$(this).attr("flag","1"); 

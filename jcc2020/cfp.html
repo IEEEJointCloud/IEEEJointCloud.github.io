@@ -57,31 +57,20 @@
 		
 		
 		<div class="jointcloud-content">
-			<div class="jointcloud-content-panel">
+			<div class="jointcloud-content-panel clearfix">
 				<div class="jointcloud-content-leftcont">
 					<ul>
-						<li style="background: #d9e7ef;">
+						<li style="background: #d9e7ef;border-right: 3px solid #187CB6;">
 							<span class="jcc-active"></span>
 							<a href="#jcc-2020-program" class="jcc-active">
 								JCC 2020 Call For Papers
 							</a>
 						</li>
+	
 						<li>
 							<span></span>
-							<a href="#The-architecture-of-JointCloud">
-								The architecture of JointCloud
-							</a>
-						</li>
-						<li>
-							<span></span>
-							<a href="#Supporting-techniques-for-JointCloud">
-								Supporting techniques for JointCloud
-							</a>
-						</li>
-						<li>
-							<span></span>
-							<a href="#Systems-and-of-JointCloud">
-								Systems and applications of JointCloud
+							<a href="#scope">
+								Scope
 							</a>
 						</li>
 						<li>
@@ -102,8 +91,13 @@
 					<h1 id="jcc-2020-program">JCC 2020 Call For Papers</h1>
 					<p>JointCloud is used to refer to but not limited to Hybrid-Cloud, Inter-Cloud, Multi-Cloud, Cloud Federation, Cross-Cloud and Cloud Service Broker (CSB) etc.</p>
 					
-					<h2 id="The-architecture-of-JointCloud">The architecture of JointCloud</h2>
+					<h2 id="scope">Scope</h2>
 					<ul>
+						<li>
+							<p>
+								<strong style="font-size: 16px;">The architecture of JointCloud</strong>
+							</p>
+						</li>
 						<li>
 							<span></span>
 							<p>
@@ -134,10 +128,12 @@
 								Blockchain-based Distributed Ledger Mechanism for JointCloud Computing, supporting value exchange among various stakeholders, as well as monitoring and auditing of JointCloud services.
 							</p>
 						</li>
-					</ul>
-				
-					<h2 id="Supporting-techniques-for-JointCloud">Supporting techniques for JointCloud</h2>
-					<ul>
+						
+						<li>
+							<p>
+								<strong style="font-size: 16px;">Supporting techniques for JointCloud</strong>
+							</p>
+						</li>
 						<li>
 							<span></span>
 							<p>
@@ -168,10 +164,12 @@
 								 Blockchain-based security mechanism in JointCloud: distributed identity and access management across multiple heterogeneous infrastructure boundaries, reconciling application security and privacy requirements across multiple SLAs on the basis of SmartContract.
 							</p>
 						</li>
-					</ul>
-				
-					<h2 id="Systems-and-of-JointCloud">Systems and applications of JointCloud</h2>
-					<ul>
+						
+						<li>
+							<p>
+								<strong style="font-size: 16px;">Systems and applications of JointCloud</strong>
+							</p>
+						</li>
 						<li>
 							<span></span>
 							<p>
@@ -197,6 +195,7 @@
 							</p>
 						</li>
 					</ul>
+				
 					
 					
 					<h2 id="Submission-Web-Page">Submission Web Page</h2>
@@ -255,30 +254,38 @@
 </html>
 <script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
-	$(".jointcloud-content-leftcont ul li a").hover(function(){
-		$(this).addClass("jcc-active");
-		$(this).parent().find("span").addClass("jcc-active");
-		$(this).parent().css("background","#d9e7ef");
-	},function(){
-		if($(this).attr("flag") != "1"){
-			$(this).removeClass("jcc-active");
-			$(this).parent().find("span").removeClass("jcc-active");
-			$(this).parent().css("background","#EEEEEE");
+	$(function(){
+		var height = window.screen.height;
+		var curheight = $(".jointcloud-content-panel").height();
+		if(curheight <= height){
+			$(".jointcloud-content-panel").css("height",curheight+200+"px");
 		}
-	});
-	
-	$(".jointcloud-content-leftcont ul li a").live("click",function(){
-		$(".jointcloud-content-leftcont ul li span").removeClass("jcc-active");
-		$(".jointcloud-content-leftcont ul li a").removeClass("jcc-active");
-		$(".jointcloud-content-leftcont ul li").css("background","#EEEEEE");
-		//$(".jointcloud-content-leftcont ul li").css("border-right","5px solid #EEEEEE");
 		
-		$(this).addClass("jcc-active");
-		$(this).parent().find("span").addClass("jcc-active");
-		$(this).parent().css("background","#d9e7ef");
-		//$(this).parent().css("border-right","3px solid #187cb6");
+		$(".jointcloud-content-leftcont ul li a").hover(function(){
+			$(this).addClass("jcc-active");
+			$(this).parent().find("span").addClass("jcc-active");
+			$(this).parent().css("background","#d9e7ef");
+		},function(){
+			if($(this).attr("flag") != "1"){
+				$(this).removeClass("jcc-active");
+				$(this).parent().find("span").removeClass("jcc-active");
+				$(this).parent().css("background","#FFFFFF");
+			}
+		});
 		
-		$(".jointcloud-content-leftcont ul li a").attr("flag","0"); 
-		$(this).attr("flag","1"); 
+		$(".jointcloud-content-leftcont ul li a").live("click",function(){
+			$(".jointcloud-content-leftcont ul li span").removeClass("jcc-active");
+			$(".jointcloud-content-leftcont ul li a").removeClass("jcc-active");
+			$(".jointcloud-content-leftcont ul li").css("background","#FFFFFF");
+			$(".jointcloud-content-leftcont ul li").css("border-right","5px solid #FFFFFF");
+			
+			$(this).addClass("jcc-active");
+			$(this).parent().find("span").addClass("jcc-active");
+			$(this).parent().css("background","#d9e7ef");
+			$(this).parent().css("border-right","3px solid #187CB6");
+			
+			$(".jointcloud-content-leftcont ul li a").attr("flag","0"); 
+			$(this).attr("flag","1"); 
+		});
 	});
 </script>
