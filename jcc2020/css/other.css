@@ -69,6 +69,10 @@
 	
 }
 
+.jointcloud-content-leftcont li span.son{
+	margin-left: 15px;
+}
+
 .jointcloud-content-leftcont li span.jcc-active{
 	background: #187CB6;
 }
@@ -76,7 +80,7 @@
 .jointcloud-content-leftcont li a{
 	display: block;
 	min-height: 20px;
-	width: 90%;
+	width: 80%;
 	float: left;
 	line-height: 20px;
 	margin-left: 5%;
