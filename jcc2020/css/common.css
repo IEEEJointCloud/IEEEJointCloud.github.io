@@ -524,8 +524,7 @@
 }
 
 .jointcloud-message-school-list:hover{
-	box-shadow:0px 6px 10px rgba(133,133,133,0.4);
-	background: #FFFFFF;
+	box-shadow:0px 6px 15px 0px rgba(133,133,133,0.4);
 }
 
 .jointcloud-message-school-space{
@@ -586,8 +585,7 @@
 }
 
 .jointcloud-message-enterprises-list:hover{
-	box-shadow:0px 6px 10px rgba(133,133,133,0.4);
-	background: #FFFFFF;
+	box-shadow:0px 6px 15px 0px rgba(133,133,133,0.4);
 }
 
 .jointcloud-message-enterprises-list a{
