@@ -27,3 +27,31 @@ body{
 .clearfix { 
 	*zoom:1;
 }
+
+
+#ieeeImage{
+	width: 100%;
+	height: 250px;
+	display: block;
+	float: left;
+	background: #EEEEEE;
+}
+
+#ieeeImage img{
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+#ieeeImage p{
+	display: block;
+	float: left;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-indent: 8px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
