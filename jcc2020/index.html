@@ -65,24 +65,24 @@
 					<ul class="slides">
 						<li>
 							<div class="img">
-								<img src="newimg/new_img_2.jpeg" style="width: 100%;height: 550px;" alt="" />
+								<img src="newimg/new_img_1.jpg" style="width: 100%;height: 650px;" alt="" />
 							</div>
 						</li>
 						<li>
 							<div class="img">
-								<img src="newimg/new_img_1.jpeg" style="width: 100%;height: 550px;" alt="" />
+								<img src="newimg/new_img_2.jpg" style="width: 100%;height: 650px;" alt="" />
 							</div>
 						</li>
 						<li>
 							<div class="img">
-								<img src="newimg/new_img_3.jpg" style="width: 100%;height: 550px;" alt="" />
+								<img src="newimg/new_img_3.jpg" style="width: 100%;height: 650px;" alt="" />
 							</div>
 						</li>
-						<!--<li>
+						<li>
 							<div class="img">
-								<img src="newimg/new_img_4.jpg" style="width: 100%;height: 550px;" alt="" />
+								<img src="newimg/new_img_4.jpg" style="width: 100%;height: 650px;" alt="" />
 							</div>
-						</li>-->
+						</li>
 					</ul>
 				
 				</div>
@@ -112,10 +112,6 @@
 		
 		<!--Message-->
 		<div class="jointcloud-message">
-			<!--<div class="jointcloud-message-split">
-				<p>IMPORTANT NEWS</p>
-				<span><code><em></em></code></span>
-			</div>-->
 			<div class="jointcloud-message-news clearfix">
 				<!--Basic Introduction-->
 				<div class="jointcloud-message-picture" style="border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;">
@@ -159,31 +155,15 @@
 					</p>
 					
 				</div>
-				
-
-			</div>
-			
-			<div class="jointcloud-sponsor clearfix">
-				<div class="jointcloud-sponsor-important clearfix">
-					<p>Sponsored</p>
+				<div class="jointcloud-message-news-right">
 					<span>
 						<code>Sponsored By</code>
 						<img src="newimg/ComputerSocietyLogo.png" />
 					</span>
 				</div>
-				<div class="jointcloud-sponsor-image clearfix">
-					<p>Picture</p>
-					<span>
-						<img src="newimg/new_1.jpg" style="margin-right: 20px;"/>
-						<img src="newimg/new_2.jpg" style="display: block;"/>
-					</span>
-				</div>
 			</div>
-			
 		
-			
-			
-			
+
 			<div class="jointcloud-message-panel clearfix">
 	
 				<!--Basic Introduction-->
@@ -448,7 +428,7 @@
 	$('#jointcloudbanner').flexslider({
 		animation: "slide",
 		direction:"horizontal",
-		slideshowSpeed:10000,
+		slideshowSpeed:15000,
 		directionNav: false, 
 		controlNav: false, 
 		mousewheel: false, 
@@ -462,18 +442,18 @@
 //		window.open("https://www.ksyun.com/","ksyun");
 	});
 	
-	var switchFlag = 1;
-	setInterval(function(){
-		if(switchFlag == 1){
-			$(".jointcloud-message-news-right img").eq(0).hide();
-			$(".jointcloud-message-news-right img").eq(1).fadeIn();
-			switchFlag = 0;
-		}else{
-			$(".jointcloud-message-news-right img").eq(0).fadeIn();
-			$(".jointcloud-message-news-right img").eq(1).hide();
-			switchFlag = 1;
-		}
-	},5000);
+//	var switchFlag = 1;
+//	setInterval(function(){
+//		if(switchFlag == 1){
+//			$(".jointcloud-message-news-right img").eq(0).hide();
+//			$(".jointcloud-message-news-right img").eq(1).fadeIn();
+//			switchFlag = 0;
+//		}else{
+//			$(".jointcloud-message-news-right img").eq(0).fadeIn();
+//			$(".jointcloud-message-news-right img").eq(1).hide();
+//			switchFlag = 1;
+//		}
+//	},5000);
 	
 	
 </script>
