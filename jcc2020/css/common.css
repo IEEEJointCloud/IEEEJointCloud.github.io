@@ -57,6 +57,7 @@
 	color: #FFFFFF;
 	float: left;
 	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 
 .jointcloud-header-navigation li a:hover{
@@ -196,7 +197,7 @@
 
 #jointcloud-banner-button span{
 	display: block;
-	width: 544px;
+	width: 584px;
 	margin: 0 auto;
 }
 
@@ -223,7 +224,7 @@
 
 .jointcloud-banner-button-right{
 	display: block;
-	width: 255px;
+	width: 295px;
 	height: 60px;
 	line-height: 60px;
 	font-size: 18px;
@@ -371,6 +372,7 @@
 	margin-left: 3%;
 	font-weight: bold;
 	font-size: 16px;
+	text-transform: uppercase;
 }
 
 .news-info{
