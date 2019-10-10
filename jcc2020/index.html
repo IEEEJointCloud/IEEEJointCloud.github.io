@@ -65,23 +65,22 @@
 					<ul class="slides">
 						<li>
 							<div class="img">
-								<!-- <img src="newimg/new_img_1.jpg" style="width: 100%;height: 650px;" alt="" /> -->
-								<img src="newimg/new_img_1.jpg" style="width: 100%;height: 100%;" alt="" />
+								<img src="newimg/new_img_1.jpg" style="width: 100%;height: 650px;" alt="" />
 							</div>
 						</li>
 						<li>
 							<div class="img">
-								<img src="newimg/new_img_2.jpg" style="width: 100%;height: 100%;" alt="" />
+								<img src="newimg/new_img_2.jpg" style="width: 100%;height: 650px;" alt="" />
 							</div>
 						</li>
 						<li>
 							<div class="img">
-								<img src="newimg/new_img_3.jpg" style="width: 100%;height: 100%;" alt="" />
+								<img src="newimg/new_img_3.jpg" style="width: 100%;height: 650px;" alt="" />
 							</div>
 						</li>
 						<li>
 							<div class="img">
-								<img src="newimg/new_img_4.jpg" style="width: 100%;height: 100%;" alt="" />
+								<img src="newimg/new_img_4.jpg" style="width: 100%;height: 650px;" alt="" />
 							</div>
 						</li>
 					</ul>
@@ -422,11 +421,44 @@
 <script type="text/javascript" src="js/slider.js" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
 	var height = window.screen.height;
+	var w_width = $(window).width();
+	var width = window.screen.width;
 	var curheight = $(".jointcloud-content-panel").height();
 	if(curheight <= height){
 		$(".jointcloud-content-panel").css("height",curheight+200+"px");
 	}
-
+	
+	var bannerheight = 0;
+	if(w_width > width){
+		//1500 650
+		//width height
+		bannerheight = parseInt((w_width*650)/1500);
+	}else{
+		bannerheight = parseInt((width*650)/1500);
+	}
+	
+	//修改CSS样式
+	$(".jointcloud-banner").css({
+		"height":bannerheight+"px"
+	});
+	$(".jointcloud-banner-panel").css({
+		"height":bannerheight+"px"
+	});
+	$(".jointcloud-banner-opacity").css({
+		"height":bannerheight+"px",
+		"margin-top":"-"+bannerheight+"px"
+	});
+	$(".flexslider").css({
+		"height":bannerheight+"px"
+	});
+	$(".img img").css({
+		"height":bannerheight+"px"
+	});
+	$("#jointcloud-banner-title").css({
+		"margin-top":parseInt(bannerheight/3)+"px"
+	});
+	
+	
 	$('#jointcloudbanner').flexslider({
 		animation: "slide",
 		direction:"horizontal",
@@ -437,6 +469,8 @@
 		easing:"swing"
 
 	});	
+	
+	
 	
 	$("#goclick").live("click",function(){
 //		window.open("https://www.aliyun.com/","aliyun");
