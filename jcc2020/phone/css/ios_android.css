@@ -1,0 +1,12 @@
+.mui-bar {
+    height: 54px;
+}
+
+.mui-title {
+    line-height: 54px;
+}
+
+.mui-bar .mui-icon {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
