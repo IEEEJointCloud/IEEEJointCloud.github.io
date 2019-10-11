@@ -15,7 +15,7 @@
 		<!--Header-->
 		<header class="mui-bar mui-bar-nav">
 			<!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
-			<h1 class="mui-title">IEEE JCC 2020</h1>
+			<h1 class="mui-title">Home</h1>
 			<a id="menu" class="mui-action-menu mui-icon mui-icon-bars mui-pull-right" href="#topPopover"></a>
 		</header>
 		
@@ -602,28 +602,60 @@
 	});
 	mui('body').on('hidden', '.mui-popover', function(e) {});
 	
-	
-	var banner_height = $("#slider").height();
-	var opactity_height = $("#jointcloud-banner-describe").height() + $("#jointcloud-banner-time").height() + $("#jointcloud-banner-info").height();
-	$(".jointcloud-banner-opacity").css({
-		"height":banner_height+"px",
-		"margin-top":"-"+banner_height+"px"
+	$(window).load(function(){
+		
+		var banner_height = $("#slider").height();
+		var opactity_height = $("#jointcloud-banner-describe").height() + $("#jointcloud-banner-time").height() + $("#jointcloud-banner-info").height();
+		var cur_height = (banner_height-opactity_height)/2-5;
+		
+		$(".jointcloud-banner-opacity").css({
+			"height":banner_height+"px",
+			"margin-top":"-"+banner_height+"px"
+		});
+		
+		if(banner_height <= opactity_height + 35){
+			$("#jointcloud-banner-describe").css({
+				"margin-top":"20px",
+			});
+			$("#jointcloud-banner-time").css({
+				"font-size":"12px"
+			});
+			$("#jointcloud-banner-info").css({
+				"font-size":"12px"
+			});
+			$("#jointcloud-banner-button a").eq(1).css({
+				"font-size":"11px"
+			});
+		}else{
+			$("#jointcloud-banner-describe").css({
+				"margin-top":cur_height+"px"
+			});
+		}
+		
+		setTimeout(function(){
+			$(".jointcloud-banner-opacity").css({
+				"height":banner_height+"px",
+				"margin-top":"-"+banner_height+"px"
+			});
+			if(banner_height <= opactity_height + 35){
+				$("#jointcloud-banner-describe").css({
+					"margin-top":"20px",
+				});
+				$("#jointcloud-banner-time").css({
+					"font-size":"12px"
+				});
+				$("#jointcloud-banner-info").css({
+					"font-size":"12px"
+				});
+			}else{
+				$("#jointcloud-banner-describe").css({
+					"margin-top":cur_height+"px"
+				});
+			}
+		},5000)
+		
 	});
-	if(banner_height <= opactity_height + 20){
-		$("#jointcloud-banner-describe").css({
-			"margin-top":"20px",
-		});
-		$("#jointcloud-banner-time").css({
-			"font-size":"12px"
-		});
-		$("#jointcloud-banner-info").css({
-			"font-size":"12px"
-		});
-	}else{
-		$("#jointcloud-banner-describe").css({
-			"margin-top":(banner_height-opactity_height)/2-5+"px"
-		});
-	}
+	
 	
 	
 	var slider = mui("#slider");
