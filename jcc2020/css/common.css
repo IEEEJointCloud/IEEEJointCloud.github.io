@@ -336,7 +336,7 @@
 	display: block;
 	width: 300px;
 	min-height: 280px;
-	margin-top: 80px;
+	margin-top: 60px;
 	float: left;
 }
 
@@ -353,6 +353,7 @@
 	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
+	/*text-transform: uppercase;*/
 	
 }
 
@@ -384,7 +385,8 @@
 	font-weight: normal;
 	font-size: 14px;
 	text-indent: 8px;
-	color: #666666;
+	color: #555555;
+	/*text-transform: uppercase;*/
 }
 
 .news-info span{
@@ -414,7 +416,7 @@
 .jointcloud-message-introduction{
 	display: block;
 	width: 1240px;
-	height: 280px;
+	min-height: 210px;
 	float: left;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -530,6 +532,8 @@
 	text-align:center;
 	font-size: 30px;
 	color: #FFFFFF;
+	/*text-transform: uppercase;*/
+	
 }
 
 .jointcloud-message-school{
@@ -895,4 +899,71 @@
 	height: 203px;
 	margin-left: 80px;
 	margin-top: 60px;
+}
+
+.jointcloud-message-introduction-left{
+	display: block;
+	min-height: 180px;
+	width: 300px;
+	/*background: #FFFFFF;*/
+	float: left;
+	padding: 15px;
+	border-radius: 5px;
+	/*box-shadow: 0px 6px 15px 5px rgba(133,133,133,0.2);*/
+}
+
+.jointcloud-message-introduction-left img{
+	display: block;
+	height: 120px;
+	width: 240px;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.jointcloud-message-introduction-right{
+	display: block;
+	min-height: 210px;
+	width: 880px;
+	/*background: #FFFFFF;*/
+	float: right;
+	border-radius: 5px;
+	/*box-shadow: 0px 6px 15px 5px rgba(133,133,133,0.1);*/
+}
+
+.jointcloud-message-introduction-right-title{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 24px;
+	margin-top: 20px;
+	font-weight: bold;
+/*	text-transform: uppercase;*/
+}
+
+
+.jointcloud-message-introduction-right-info{
+	display: block;
+	line-height: 25px;
+	width: 96%;
+	float: left;
+	margin-left: 2%;
+	text-align: left;
+	font-size: 16px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	text-indent: 40px;
+	/*text-transform: uppercase;*/
+}
+
+.jointcloud-message-introduction-right-info a{
+	font-size: 16px;
+	color: #187CB6;
+}
+
+.jointcloud-message-introduction-right-info b{
+	font-size: 16px;
+	font-weight: bold;
 }
