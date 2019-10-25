@@ -235,7 +235,7 @@ span.mui-icon {
 	color: #25426D;
 	font-size: 13px;
 	margin-bottom: 0px;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	
 }
 
@@ -322,17 +322,17 @@ span.mui-icon {
 
 .jcc-content-base-info{
 	display: block;
-	width: 96%;
-	min-height: 0px;
-	line-height: 18px;
-	font-size: 13px;
-	float: left;
-	margin-left: 2%;
-	text-align: center;
-	font-weight: normal;
-	text-transform: uppercase;
-	color: #555555;
-	margin-bottom: 25px;
+    width: 92%;
+    min-height: 0px;
+    line-height: 20px;
+    font-size: 13px;
+    float: left;
+    margin-left: 4%;
+    text-align: center;
+    font-weight: normal;
+    /* text-transform: uppercase; */
+    color: #555555;
+    margin-bottom: 25px;
 	
 }
 
@@ -403,7 +403,7 @@ span.mui-icon {
 	line-height: 18px;
 	color: #25426d;
 	font-size: 13px;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 .jcc-content-date p.jcc-content-date-text{
@@ -569,7 +569,7 @@ span.mui-icon {
 	line-height: 20px;
 	color: #444444;
 	font-size: 13px;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 .jcc-content-org p.jcc-content-org-text{
