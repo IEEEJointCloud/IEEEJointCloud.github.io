@@ -355,12 +355,13 @@ table.altrowstable td strong{
 a[id='showBtn']{
 	display: block;
 	height: 35px;
-	width: 100px;
+	width: 180px;
 	line-height: 35px;
 	background: #F3F3F3;
 	text-align: center;
-	font-size: 13px;
+	font-size: 12px;
 	border: 1px solid #BBBBBB;
 	margin:  0 auto;
 	margin-top: 20px;
+	text-transform:uppercase;
 }
