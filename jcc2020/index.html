@@ -11,6 +11,7 @@
 		<link type="text/css" rel="stylesheet" href="css/common.css" />
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
 		<link type="text/css" rel="stylesheet" href="css/style3.css" />
+		<link type="text/css" rel="stylesheet" href="css/layer.css"/>
 	</head>
 	<body>
 		
@@ -263,10 +264,16 @@
 			</div>
 		</footer>
 		
+		<!--Drift-->
+		<div class="jointcloud-drift">
+			<a id="driftOpen" href="javascript:;">Travel Safety and Medical Guidelines</a>
+		</div>
+		
 	</body>
 </html>
 <script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
 <script type="text/javascript" src="js/slider.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/layer/layer.js" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
 	var height = window.screen.height;
 	var w_width = $(window).width();
@@ -317,5 +324,19 @@
 		easing:"swing"
 
 	});	
+	
+	
+	$("a[id='driftOpen']").click(function(){
+		 layer.open({
+		      type: 2,
+		      title: 'Travel Safety and Medical Guidelines',
+		      shadeClose: true,
+		      shade: false,
+		      maxmin: false, //开启最大化最小化按钮
+		      area: ['600px', '380px'],
+		      content: 'safety.html',
+			  anim: 3
+		    });
+	});
 	
 </script>
