@@ -970,27 +970,29 @@
 
 .jointcloud-drift{
 	display: block;
-	width: 120px;
+	width: 140px;
 	height: 80px;
 	position: fixed;
 	background: #FFFFFF;
-	border: 1px solid #DDDDDD;
 	right: 0px;
 	top: 50%;
-	z-index: 999;
-	border-left: 8px solid #187CB6;
+	z-index: 20200209;
+	border: 8px solid #CF2D28;
+	border-radius: 0px;
+	box-shadow: none;
 }
 
 .jointcloud-drift a{
 	display: block;
 	padding: 10px;
-	width: 100px;
+	width: 120px;
 	height: 60px;
 	float: left;
 	font-size: 15px;
-	color: #222222;
+	color: #DD524D;
 	line-height: 20px;
-	box-shadow: 0px 2px 5px #DDDDDD;
+	letter-spacing: 1px;
+	text-align: center;
 }
 
 .jointcloud-safety{
@@ -998,28 +1000,28 @@
 	width: 96%;
 	min-height: 0px;
 	float: left;
-	padding: 2%;
+	padding: 10px;
 }
 
 .jointcloud-safety h5{
 	font-size: 30px;
-	color: #fe7253;
+	color: #222222;
 	line-height: 60px;
 	text-align: center;
 	font-weight: bold;
 }
 
 .jointcloud-safety p{
-	font-size: 15px;
+	font-size: 14px;
 	text-indent: 30px;
-	color: #56607c;
+	color: #222222;
 	line-height: 30px;
 }
 
 .jointcloud-safety ul li{
 	font-size: 14px;
 	text-indent: 30px;
-	color: #000000;
+	color: #222222;
 	line-height: 30px;
 }
 
