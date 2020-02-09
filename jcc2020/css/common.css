@@ -967,3 +967,67 @@
 	font-size: 16px;
 	font-weight: bold;
 }
+
+.jointcloud-drift{
+	display: block;
+	width: 120px;
+	height: 80px;
+	position: fixed;
+	background: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	right: 0px;
+	top: 50%;
+	z-index: 999;
+	border-left: 8px solid #187CB6;
+}
+
+.jointcloud-drift a{
+	display: block;
+	padding: 10px;
+	width: 100px;
+	height: 60px;
+	float: left;
+	font-size: 15px;
+	color: #222222;
+	line-height: 20px;
+	box-shadow: 0px 2px 5px #DDDDDD;
+}
+
+.jointcloud-safety{
+	display: block;
+	width: 96%;
+	min-height: 0px;
+	float: left;
+	padding: 2%;
+}
+
+.jointcloud-safety h5{
+	font-size: 30px;
+	color: #fe7253;
+	line-height: 60px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.jointcloud-safety p{
+	font-size: 15px;
+	text-indent: 30px;
+	color: #56607c;
+	line-height: 30px;
+}
+
+.jointcloud-safety ul li{
+	font-size: 14px;
+	text-indent: 30px;
+	color: #000000;
+	line-height: 30px;
+}
+
+.jointcloud-safety ul li a{
+	color: #187CB6;
+	text-decoration: underline;
+}
+
+.jointcloud-safety ul li a:hover{
+	color: #900;
+}
