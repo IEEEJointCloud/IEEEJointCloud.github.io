@@ -163,40 +163,47 @@
 #jointcloud-banner-time b{
 	font-size: 20px;
 	font-weight: normal;
-	color: #ff2e00;
-	text-decoration:line-through;
+	color: #EEEEEE;
+}
+
+#jointcloud-banner-time em{
+	display: block;
+	width: 170px;
+	height: 3px;
+	background: #ff0900;
+	position: relative;
+	margin-top: -16px;
 }
 
 #jointcloud-banner-time-c{
 	display: block;
 	height: 30px;
-	width: 800px;
+	width: 500px;
 	margin: 0 auto;
 }
 
 #jointcloud-banner-time-1{
 	display: block;
 	height: 30px;
-	width: 320px;
+	width: 500px;
 	float: left;
 }
 
 #jointcloud-banner-time-1-1{
 	display: block;
-	height: 10px;
-	line-height: 10px;
-	width: 320px;
-	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	width: 180px;
+	font-size: 20px;
 	font-weight: normal;
-	color: #CF2D28;
-	text-decoration:line-through;
+	color: #DDDDDD;
 	float: left;
 	text-align: left;
 }
 #jointcloud-banner-time-1-2{
 	display: block;
-	height: 20px;
-	line-height: 20px;
+	height: 30px;
+	line-height: 30px;
 	width: 320px;
 	font-size: 20px;
 	font-weight: normal;
