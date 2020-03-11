@@ -154,10 +154,63 @@
 	font-weight: normal;
 	color: #FFFFFF;
 	margin-top: 10px;
+	margin-bottom: 10px;
 	float: left;
 	text-transform: uppercase;
 	text-shadow:1px 1px #000000;
 }
+
+#jointcloud-banner-time-c{
+	display: block;
+	height: 30px;
+	width: 800px;
+	margin: 0 auto;
+}
+
+#jointcloud-banner-time-1{
+	display: block;
+	height: 30px;
+	width: 320px;
+	float: left;
+}
+
+#jointcloud-banner-time-1-1{
+	display: block;
+	height: 10px;
+	line-height: 10px;
+	width: 320px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #CF2D28;
+	text-decoration:line-through;
+	float: left;
+	text-align: left;
+}
+#jointcloud-banner-time-1-2{
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	width: 320px;
+	font-size: 20px;
+	font-weight: normal;
+	color: #FFFFFF;
+	float: left;
+	text-align: left;
+}
+
+#jointcloud-banner-time-2{
+	display: block;
+	height: 30px;
+	width:480px;
+	font-size: 20px;
+	font-weight: normal;
+	color: #FFFFFF;
+	float: left;
+	overflow: hidden;
+	text-align: left;
+	line-height: 40px;
+}
+
 
 #jointcloud-banner-info{
 	display: block;
@@ -971,7 +1024,7 @@
 .jointcloud-drift{
 	display: block;
 	width: 140px;
-	height: 80px;
+	height: 100px;
 	position: fixed;
 	background: #FFFFFF;
 	right: 0px;
@@ -997,17 +1050,18 @@
 
 .jointcloud-safety{
 	display: block;
-	width: 96%;
+	width: 92%;
 	min-height: 0px;
 	float: left;
 	padding: 10px;
+	margin-left: 3%;
 }
 
 .jointcloud-safety h5{
-	font-size: 30px;
+	font-size: 24px;
 	color: #222222;
-	line-height: 60px;
-	text-align: center;
+	line-height: 50px;
+	text-align: left;
 	font-weight: bold;
 }
 
@@ -1015,14 +1069,18 @@
 	font-size: 14px;
 	text-indent: 30px;
 	color: #222222;
-	line-height: 30px;
+	line-height: 26px;
 }
 
 .jointcloud-safety ul li{
 	font-size: 14px;
 	text-indent: 30px;
-	color: #222222;
-	line-height: 30px;
+	color: #666666;
+	line-height: 26px;
+}
+
+.jointcloud-safety ul li span{
+	color: #CF2D28;
 }
 
 .jointcloud-safety ul li a{
