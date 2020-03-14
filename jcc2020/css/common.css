@@ -178,14 +178,14 @@
 #jointcloud-banner-time-c{
 	display: block;
 	height: 30px;
-	width: 500px;
+	width: 380px;
 	margin: 0 auto;
 }
 
 #jointcloud-banner-time-1{
 	display: block;
 	height: 30px;
-	width: 500px;
+	width: 380px;
 	float: left;
 }
 
@@ -204,7 +204,7 @@
 	display: block;
 	height: 30px;
 	line-height: 30px;
-	width: 320px;
+	width: 200px;
 	font-size: 20px;
 	font-weight: normal;
 	color: #FFFFFF;
