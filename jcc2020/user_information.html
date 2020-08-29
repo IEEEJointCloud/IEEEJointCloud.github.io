@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>IEEE JCC 2020</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link type="text/css" rel="stylesheet" href="css/base.css" />
+		<link type="text/css" rel="stylesheet" href="css/common.css" />
+		<link type="text/css" rel="stylesheet" href="css/other.css" />
+		<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				font: 20px / 1.5 "微软雅黑",Verdana,Tahoma,Arial,sans-serif,"宋体";
+				line-height: 30px;
+			}
+			/* 弹窗区域 */
+			.window1, .window2, .window3{
+				text-align: center;
+			}
+			/* 弹窗标题 */
+			h4{
+				font-size: 20px;
+				line-height: 50px;
+				margin: 0 auto;
+			}
+			label{
+				margin-right: 10px;
+				color: #888;
+			}
+			/* 账户、密码、邮箱输入框 */
+			.account,.password,.repassword,.email{
+				border: 1px solid #ccc;
+				border-radius: 3px;
+				padding: 10px 5px;
+				width: 250px;
+			}
+			/* 每个输入框之间间距 */
+			.item{
+				margin: 20px auto;
+			}
+			/* 提交按钮 */
+			.accountSubmitBtn,.passwordSubmitBtn,.emailSubmitBtn{
+				background: #e40;
+				border: 1px solid #e40;
+				border-radius: 5px;
+				padding: 10px 5px;
+				width: 262px;
+				margin: 5px 0 0 21px;
+				color: #fff;
+			}
+			/* 信息填写错误时提示 */
+			.error-msg{
+				color: #e40;
+			}
+			/* 弹出层遮罩 */
+			.layer-mask{
+				display: none;      /* 遮罩默认开始是不显示的 */
+				z-index: 99999;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #000;
+				opacity: 0.5;       /* 设置透明度为50% */
+			}
+			/* 弹出层窗体 */
+			.layer-pop{
+				display: none;      /* 默认开始是不显示的 */
+				z-index: 100000;
+				position: fixed;
+				top: 0;             /* 设置水平垂直居中 */
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				width: 400px;
+				height: 300px;
+				background: #fff;
+			}
+			/* 弹出层关闭按钮 */
+			.layer-close{
+				float: right;
+				width: 24px;
+				height: 24px;
+				border:3px solid #fff;
+				text-align: center;       /* 设置内容居中显示 */
+				line-height: 24px;        /* 设置内容的高度 */
+				border-radius: 50%;
+				background: #eee;
+				margin: -12px -12px 0 0;
+			}
+			/* 添加鼠标滑过的样式 */
+			.layer-close:hover{
+				cursor: pointer;
+				background: #ccc;
+				color: #fff;
+			}
+		</style>
+
+	</head>
+	<body>
+		<!-- 弹出层 -->
+		<div id="layer-mask" class="layer-mask"></div>           <!--弹出层遮罩-->
+		<div id="layer-pop" class="layer-pop">                   <!--弹出层窗体-->
+			<div id="layer-close" class="layer-close">×</div>    <!--弹出层关闭按钮-->
+			<div id="layer-content" class="layer-content"></div> <!--弹出层内容区域-->
+		</div>
+		<!-- 账户修改窗体 -->
+		<div id="accountHtml" style="display: none;">
+			<div class="window1">
+				<h4 class="title">Change Account</h4>
+				<div class="item">
+					<label>New Account</label>
+					<input type="text" id="new-account" class="account" name="new-account" placeholder="Please enter your new account">
+					<p class="error-msg"></p>
+				</div>
+				<div class="item">
+					<label>&nbsp;</label>
+					<input type="submit" id="accountSubmitBtn" class="accountSubmitBtn" value="Submit">
+				</div>
+			</div>
+		</div>
+		<!-- 密码修改窗体 -->
+		<div id="passwordHtml" style="display: none;">
+			<div class="window2">
+				<h4 class="title">Change Password</h4>
+				<div class="item">
+					<label>New Password</label>
+					<input type="text" id="new-password" class="password" name="password" placeholder="Please enter your new password">
+				</div>
+				<div class="item">
+					<label>Verify Password</label>
+					<input type="text" id="re-password" class="repassword" name="re-password" placeholder="Please enter your new password again">
+					<p class="error-msg"></p>
+				</div>
+				<div class="item">
+					<label>&nbsp;</label>
+					<input type="submit" id="passwordSubmitBtn" class="passwordSubmitBtn" value="Submit">
+				</div>
+			</div>
+		</div>
+		<!-- 邮箱修改窗体 -->
+		<div id="emailHtml" style="display: none;">
+			<div class="window3">
+				<h4 class="title">Change email</h4>
+				<div class="item">
+					<label>New Email</label>
+					<input type="text" id="new-email" class="email" name="new-email" placeholder="Please enter your new email">
+					<p class="error-msg"></p>
+				</div>
+				<div class="item">
+					<label>&nbsp;</label>
+					<input type="submit" id="emailSubmitBtn" class="emailSubmitBtn" value="Submit">
+				</div>
+			</div>
+		</div>
+
+		<!--Header-->
+		<header class="jointcloud-header">
+			<div class="jointcloud-header-panel">
+				<a href="index.html" class="jointcloud-header-logo">
+					IEEE JCC 2020
+				</a>
+				<ul class="jointcloud-header-navigation">
+					<li>
+						<a href="index.html">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="user_information.html", class="jcc-active">
+							User
+						</a>
+					</li>
+					<li>
+						<a href="paper_details.html">
+							Paper
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="jointcloud-fill"></div>
+		
+		
+		<div class="jointcloud-content">
+			<div class="jointcloud-content-panel clearfix">
+				<div class="jointcloud-content-leftcont">
+					<ul>
+						<li style="background: #d9e7ef;border-right: 3px solid #187CB6;">
+							<!--<span class="jcc-active"></span>-->
+							<a flag="1" class="jcc-active" href="#ieee-icojc" style="font-size: 12px;">
+								IEEE INTERNATIONAL CONFERENCE ON JOINTCLOUD COMPUTING
+							</a>
+						</li>
+						<li>
+							<span class="son"></span>
+							<a href="#user-information">User Information</a>
+						</li>
+						<li>
+							<span class="son"></span>
+							<a href="#personal-papers">Personal Papers</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="jointcloud-content-rightcont">
+					<h1 id="ieee-icojc" style="font-size: 26px;">IEEE INTERNATIONAL CONFERENCE ON JOINTCLOUD COMPUTING</h1>
+					
+					<h2 id="user-information">User Information</h2>
+
+						<p class="jointcloud-p">&nbsp;&nbsp; &nbsp;  &nbsp; Name: </p>
+						<br>
+						<p class="jointcloud-p">&nbsp;&nbsp; &nbsp;  &nbsp; Account: <a id="change-account" href="#">Change Account</a></p>
+						<br>
+
+						<p class="jointcloud-p">&nbsp;&nbsp; &nbsp;  &nbsp; Password: <a id="change-password" href="#">Change Password</a></p>
+						<br>
+
+						<p class="jointcloud-p">&nbsp;&nbsp; &nbsp;  &nbsp; Email: <a id="change-email" href="#">Change Email</a></p>
+						<br>
+
+					<h2 id="personal-papers">Personal Papers</h2>
+
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; Honeypot Contract Risk Warning on Ethereum Smart Contracts</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; GraphLib: A Parallel Graph Mining Library for Joint Cloud Computing</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; A Cost-Efficient and Low-Latency Data Hosting Scheme in JointCloud Storage</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; Jupiter: A Modern Federated Learning Platform for Regional Medical Care</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; Communication-Efficient Collaborative Learning of Geo-Distributed JointCloud from Heterogeneous Datasets</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; A Distributed Computing Framework Based on Variance Reduction Method to Accelerate Training Machine Learning Models</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; Cross-domain Workloads Performance Prediction via Runtime Metrics Transferring</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; Optimizing one by one direct convolution on ARMv8 multi-core CPUs</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; CloudMeter: A Tool to Evaluate and Select the Desired VMs</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; ALLSTAR: a blockchain based joint ecosystem for the decentralized cloud and edge computing environment</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; Cooperative Offloading for Multiple Robot Applications</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; Cloud-edge Collaborative Industrial Robotic Intelligent Service Platform</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; Nuka: A Generic Engine with Millisecond Initialization for Serverless Computing</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; HCloud: A Serverless Platform for JointCloud Computing</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; A Survey on Serverless Computing: Applications, Performance, and Security</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; A distributed event extraction framework from large-scale unstructured text</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; Identifying the End-to-End Backbone of Information Diffusion</p>
+					<p class="jointcloud-c">&nbsp;&nbsp; &nbsp; ● &nbsp; Mining Robust Frequent Items in Data Streams</p>
+
+					<div class="jointcloud-speech">
+						<p class="jointcloud-speech-content">
+<!--							<a style="color: #000000;" href="keynote.html">-->
+<!--								<strong>Title: </strong>New Horizons in IoT Workflows Provisioning in Edge and Cloud Datacentres for Fast Data Analytics  New Horizons in IoT Workflows Provisioning in Edge and Cloud Datacentres for Fast Data Analytics.			-->
+<!--							</a>-->
+						</p>
+
+						<a id="showBtn" href="paper_details.html">more paper details</a>
+					</div>
+					
+				</div>
+				<!--
+				<div class="jointcloud-content-center">
+					<p>
+						The page you are trying to access is not ready and will be uploaded once the details for the IEEE JCC 2020 conference becomes available.
+					</p>
+				</div>
+				-->
+			</div>
+		</div>
+		<script>
+
+			$(document).ready(function($){
+
+				// 弹出层关闭回调函数
+				function closeCallback(){
+					$(".error-msg").html("");
+				}
+				// 关闭弹出层
+				function hideLayer(){
+					$("#layer-mask").hide();             // 隐藏弹出层遮罩
+					$("#layer-pop").hide();              // 隐藏弹出层窗体
+				}
+				// 显示弹出层函数
+				function showLayer(html, width, height, closeCallback){
+					$("#layer-mask").show();             // 显示弹出层遮罩
+					$("#layer-pop").show();              // 显示弹出层窗体
+					$("#layer-pop").css({                // 设置弹出层窗体样式
+						width: width,
+						height: height
+					});
+					$("#layer-content").html(html);      // 填充弹出层窗体内容
+					$("#layer-close").click(function(){
+						hideLayer();                     //关闭弹出层
+						closeCallback();                 //关闭弹出层的回调函数
+					})
+				}
+				// 点击修改账号按钮显示弹出层
+				$("#change-account").click(function(){
+					var accountHtml = $("#accountHtml").html();          // 获取修改账户窗体的代码
+					showLayer(accountHtml, 500, 300, closeCallback);   // 显示弹出层
+
+					$("#accountSubmitBtn").click(function(){
+						var account = $("input[id='new-account']").val();
+						if(account!=''){
+							alert("Succeed!");
+							window.location.href = "user_information.html";
+						}else{
+							$(".error-msg").html("The new account cannot be empty!");
+						}
+					});
+				})
+				// 点击修改密码按钮显示弹出层
+				$("#change-password").click(function(){
+					var passwordHtml = $("#passwordHtml").html();          // 获取修改密码窗体的代码
+					showLayer(passwordHtml, 500, 300, closeCallback);   // 显示弹出层
+
+					$("#passwordSubmitBtn").click(function(){
+						var new_password = $("input[id='new-password']").val();
+						var re_password = $("input[id='re-password']").val();
+						if(new_password!=''&&re_password!=""&&new_password==re_password){
+							alert("Succeed!");
+							window.location.href = "user_information.html";
+						}else{
+							$(".error-msg").html("Please make sure your passwords are the same");
+						}
+					});
+				})
+
+				$("#change-email").click(function(){
+					var emailHtml = $("#emailHtml").html();          // 获取修改邮箱窗体的代码
+					showLayer(emailHtml, 500, 300, closeCallback);   // 显示弹出层
+
+					$("#emailSubmitBtn").click(function(){
+						var email = $("input[id='new-email']").val();
+						if(email!=''){
+							alert("Succeed!");
+							window.location.href = "user_information.html";
+						}else{
+							$(".error-msg").html("The new email cannot be empty!");
+						}
+					});
+				})
+
+			});
+
+		</script>
+
+
+		<!--Footer-->
+		<div class="jointcloud-footer-space"></div>
+		<footer class="jointcloud-footer">
+			<div class="jointcloud-footer-panel">
+				<a target="_blank" href="http://jointcloud.trustie.net"><code>©</code>&nbsp;IEEE JCC Team</a>
+				<p>The website was established by the National University of Defense Science and Technology</p>
+			</div>
+		</footer>
+		
+	</body>
+</html>
+
+<script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+	$(function(){
+		var height = window.screen.height;
+		var curheight = $(".jointcloud-content-panel").height();
+		if(curheight <= height){
+			$(".jointcloud-content-panel").css("height",curheight+200+"px");
+		}
+		
+		$(".jointcloud-content-leftcont ul li a").hover(function(){
+			$(this).addClass("jcc-active");
+			$(this).parent().find("span").addClass("jcc-active");
+			$(this).parent().css("background","#d9e7ef");
+		},function(){
+			if($(this).attr("flag") != "1"){
+				$(this).removeClass("jcc-active");
+				$(this).parent().find("span").removeClass("jcc-active");
+				$(this).parent().css("background","#FFFFFF");
+			}
+		});
+		
+		$(".jointcloud-content-leftcont ul li a").live("click",function(){
+			$(".jointcloud-content-leftcont ul li span").removeClass("jcc-active");
+			$(".jointcloud-content-leftcont ul li a").removeClass("jcc-active");
+			$(".jointcloud-content-leftcont ul li").css("background","#FFFFFF");
+			$(".jointcloud-content-leftcont ul li").css("border-right","5px solid #FFFFFF");
+			
+			$(this).addClass("jcc-active");
+			$(this).parent().find("span").addClass("jcc-active");
+			$(this).parent().css("background","#d9e7ef");
+			$(this).parent().css("border-right","3px solid #187CB6");
+			
+			$(".jointcloud-content-leftcont ul li a").attr("flag","0"); 
+			$(this).attr("flag","1"); 
+		});
+		
+		$("a[id='showBtn']").live("click",function(){
+			
+			if($("#showContent").attr("class") == "jointcloud-speech-show"){
+				$("#showContent").removeClass("jointcloud-speech-show");
+				$("a[id='showBtn']").remove();
+			}
+		});
+
+	});
+
+</script>

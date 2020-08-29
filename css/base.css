@@ -1,0 +1,29 @@
+*{
+	font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STXihei, "Microsoft YaHei",SimHei, "WenQuanYi Micro Hei";
+    font-size: 14px;
+    font-weight: 400;
+	color: #333333;
+	text-decoration: none;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background: #EEEEEE;
+	width: 100%;
+}
+
+.clearfix:after { 
+	content: "."; 
+	display: block; 
+	clear: both; 
+	visibility: hidden; 
+	line-height: 0;
+	height: 0; 
+	font-size:0;
+} 
+
+.clearfix { 
+	*zoom:1;
+}
